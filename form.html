@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        #garis_Bawah {
+            background: #FFBC95;
+            height: 3px;
+            margin: 0 auto;
+            width: 400px;
+        }
+        .input_style{
+            border: 2px solid #D3C0AC;
+            background-color: #fcfcfc;
+            width: 95%;
+            height: 15%;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-bottom: 10px;
+            margin-top: 2px;
+        }
+        #kirim{
+            background: #D3C0AC;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 1px 8px #585858;
+            cursor: pointer;
+            color: black;
+            font-size: 16pt;
+            font-family: Geneva, Verdana, sans-serif;
+            height: 40px;
+            margin-top: 30px;
+            margin-left: 25%;
+            align-items: center;
+            width: 40%;
+        }
+        #garis_Footer{
+            background: #E1D1B7;
+            height: 3px;
+            margin: 0 auto;
+            width: 850px;
+        }
+    </style>
+</head>
+<body style="height: 67vh;">
+    <h1 style="text-align: center; margin: 0 auto;">Form Pesan</h1>
+    <div id="garis_Bawah"></div>
+
+    <div style="width: 85%; height: 100%; overflow: hidden; margin: 0 auto; margin-top: 30px; ">
+        <div style="width: 50%; height: 100%; float: left;">
+            <label for="nama" >Nama Anda :</label>
+            <br>
+            <input type="text" id="nama" class="input_style">
+            <br>
+            <label for="email">Email Anda :</label>
+            <br>
+            <input type="email"  id="email"class="input_style">
+            <br>
+            <label for="subyekPesan">Subyek Pesan :</label>
+            <br>
+            <input type="text"  id="subyekPesan"class="input_style">
+            <br>
+            <input type="button" value="Kirim" id="kirim" >
+        </div>
+
+        <div style="width: 50%; height: 100%; margin: 0 auto; float: right;">
+            <label for="isiPesan">Pesan Anda :</label>
+            <input type="text"  id="isiPesan"
+                class="input_style"
+                style="height: 88%;"
+            >
+        </div>
+    </div>
+
+    <div id="garis_Footer"></div>
+
+    <div style="text-align: center; margin: 0 auto;">
+        <pre>Whatsapp    |   Facebook    |   Grab   |    Instagram</pre>
+        <p>2016 - 2020 UNNI KOREAN FOODS</p>
+        <pre>Jalan Khairil Anwar Gang Melati 2
+Badean, Bondowoso - Jawa Timur</pre>
+    </div>
+</body>
+</html>
