@@ -2,3 +2,32 @@
     background-image: url(mainbg.png);
     width: 100%vw;
 }
+.garis_Bawah {
+    background: #FFBC95;
+    height: 3px;
+    margin: 0 auto;
+    width: 400px;
+}
+.input_style{
+    border: 2px solid #D3C0AC;
+    background-color: #fcfcfc;
+    width: 95%;
+    height: 15%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
+.garis_Footer{
+    background: #E1D1B7;
+    height: 3px;
+    margin: 0 auto;
+    width: 850px;
+
+}
+.sub_Title{
+    text-align: center; 
+    margin: 0 auto;
+
+}
