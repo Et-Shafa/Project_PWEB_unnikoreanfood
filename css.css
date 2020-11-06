@@ -1,6 +1,9 @@
 .main_Back{
     background-image: url(mainbg.png);
-    width: 100%vw;
+    width: 150%;
+    height: 768px;
+    background-repeat: no-repeat;
+    margin: 0;
 }
 .garis_Bawah {
     background: #FFBC95;
