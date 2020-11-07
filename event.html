@@ -9,10 +9,45 @@
 
         #eventback{
             background-image:url(eventbg.png);
-            width: 100%;
+            background-size: 100vw;
             background-repeat: no-repeat;
         
         }
+        .scroll{
+            display:block;
+            border: 1px solid red;
+            padding:5px;
+            margin-top:5px;
+            width:300px;
+            height:50px;
+            overflow:scroll;
+        }
+        .auto{
+            display:block;
+            border: 1px solid red;
+            padding:5px;
+            margin-top:5px;
+            width:300px;
+            height:50px;
+            overflow:auto;
+        }
+
+        .scroll{
+            width: 300px;
+            background: orange;
+            padding: 10px;
+            overflow: scroll;
+            height: 300px;
+            
+            /*script tambahan khusus untuk IE */
+            scrollbar-face-color: #CE7E00; 
+            scrollbar-shadow-color: #FFFFFF; 
+            scrollbar-highlight-color: #6F4709; 
+            scrollbar-3dlight-color: #FFFFFF; 
+            scrollbar-darkshadow-color: #6F4709; 
+            scrollbar-track-color: #FFE8C1; 
+            scrollbar-arrow-color: #6F4709;
+            }
 
 
     </style>
@@ -20,23 +55,31 @@
 <body class="sub_Title" id="eventback">
     <h1 style="color: #ffffff;">Event</h1>
     <div class="garis_Bawah"></div>
-    <dir style="width: 80%; height: 200px; margin: 0 auto; margin-top: 20px;"> 
-        <div style="float: left; width: 20%; background-color: #FFBC95;">xasxmaksxmm</div>
-        <div style="width: 80%; background-color:#FFE7D9;">cadcaca</div>
-    </dir>
-    <table border="2" style="width: 80%; margin: 0 auto; margin-top: 20px;">
-        <tr style="height: 100px;">
-            <td  style="width: 20%; background-color:#FFBC95; border-bottom-right-radius: 20dp; border-top-right-radius: 20dp;"></td>
-            <td style="width: 80%; background-color:#FFE7D9; border-bottom-right-radius: 20dp; border-top-right-radius: 20dp;"></td>
-        </tr>
+    <div class="scroll">
+        <div style="width: 70vw; margin: 0 auto; margin-top: 20px;"> 
+            <div style="float: left; width: 20vw; height: 80px; background-color: #FFBC95; background-size: 20%;">xasxmaksxmm</div>
+            <div style="width: auto; height: 80px; background-color:#FFE7D9; border-bottom-right-radius: 10px; border-top-right-radius: 10px;">cadcaca</div>
+        </div>
+        <div style="width: 70vw; margin: 0 auto; margin-top: 20px;"> 
+            <div style="float: left; width: 20vw; height: 80px; background-color: #FFBC95; background-size: 20%;">xasxmaksxmm</div>
+            <div style="width: auto; height: 80px; background-color:#FFE7D9; border-bottom-right-radius: 10px; border-top-right-radius: 10px;">cadcaca</div>
+        </div>
+        <div style="width: 70vw; margin: 0 auto; margin-top: 20px;"> 
+            <div style="float: left; width: 20vw; height: 80px; background-color: #FFBC95; background-size: 20%;">xasxmaksxmm</div>
+            <div style="width: auto; height: 80px; background-color:#FFE7D9; border-bottom-right-radius: 10px; border-top-right-radius: 10px;">cadcaca</div>
+        </div>
+    </div>
+    
 
+    <h2>DUMETSCHOOL</h2>
+    <div class="scroll">
+       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </div>
+    <br />      
+    <div class="auto">
+       The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+    </div>
 
-
-
-
-    </table>
-    <!-- <div style="width: 90%; height: 400dp; background-color: aqua; "> -->
-    <!-- </div> -->
     
 
 </body>
