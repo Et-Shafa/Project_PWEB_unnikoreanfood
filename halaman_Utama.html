@@ -7,37 +7,72 @@
 
     <style>
         @import url(css.css);
+
+		.search {
+			padding:8px 15px;
+			background:rgb(255, 255, 255);
+			border:0px;
+		}
+		.button {
+			position:relative;
+			padding:6px 15px;
+            right:-5px;
+            background-image: url(search.png);
+            background-size: cover;
+            background-color: #ffffff;
+			border:0px ;
+            color:#fafafa;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li{
+            float: left;
+            margin-right: 5px;
+            border: "2";
+            border-bottom: black;
+        }
     </style>
 </head>
-<body>
-    <header> 
-        <div class="main_Back"> <!--div Dashboard 1-->
-            <div style="margin: 0 auto;">   <!--div utama-->
-                <div id="tenjoy" style="float: left;"> <!--div left-->
-                    <p>Enjoy the</p>
-                    <p>Taste!!!</p>
+<body> 
+    <div class="main_Back" id="d1"> <!--div Dashboard 1-->
+        <div style="margin: 0 auto; ">   <!--div utama-->
+            <div id="tenjoy""> <!--div left-->
+                <p>Enjoy the</p>
+                <p>Taste!!!</p>
+
+            </div>
+            <div style="float: right;"> <!--div right-->
+                <div> <!--div atas-->
+                    <div style="float: left; width: max-content;">
+                        <form style="margin-top: 20px; margin-right: 20px;"> <!--search-->
+                            <input class="button" type="button">
+                            <input class="search" type="text" required>			
+                        </form>
+
+                        <div>
+                            <ul>
+                                <li><a href="">Beranda</a></li>
+                                <li><a href="">Event</a></li>
+                                <li><a href="">Daftar Menu</a></li>
+                                <li><a href="">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <img src="logo.jpeg" style="width:200px; margin: 20px;" >
 
                 </div>
-                <div style="float: right;"> <!--div right-->
-                    <div> <!--div atas-->
-                        <div> <!--div search-->
-
-                        </div>
-                        <div> <!--div navbar-->
-                            
-                        </div>
-
-                    </div>
-                    <div> <!--div bawah-->
-                        <pre>
-                            Jalan Khairil Anwar Gang Melati 2
+                <div style="margin-top: 10dp;"> <!--div bawah-->
+                    <pre>
+                        Jalan Khairil Anwar Gang Melati 2
 Badean, Bondowoso - Jawa Timur
 </pre>
 
-                    </div>
                 </div>
-            </div>    
-        </div>
-    </header>
+            </div>
+        </div>    
+    </div>
+
 </body>
 </html>
