@@ -11,17 +11,21 @@
 		.search {
 			padding:8px 15px;
 			background:rgb(255, 255, 255);
-			border:0px;
+            border:0px;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
 		}
 		.button {
 			position:relative;
-			padding:6px 15px;
-            right:-5px;
-            background-image: url(search.png);
+			padding:8px 15px;
+            right:0px;
+            margin: 0 auto;
+            background-image: url(image/search.png);
             background-size: cover;
-            background-color: #ffffff;
-			border:0px ;
-            color:#fafafa;
+            border:0px ;
+            float: left;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
         }
         ul{
             list-style-type: none;
@@ -31,7 +35,7 @@
             margin-right: 5px;
             border: "2";
             border-bottom: black;
-            font-size: 10pt;
+            font-size: 15pt;
         }
     </style>
 </head>
@@ -39,11 +43,11 @@
     <div class="main_Back" id="d1"> <!--div Dashboard 1-->
         <div style="margin: 0 auto; ">   <!--div utama-->
             <div id="tenjoy" style="float: left; margin: 100px;"> <!--div left-->
-                <p>Enjoy the</p>
-                <p>Taste!!!</p>
+                <p style="text-shadow: 5 4 3 grey;">Enjoy the</p>
+                <p style="text-shadow: 5 4 3 grey;">Taste!!!</p>
 
             </div>
-            <div style="float: right;"> <!--div right-->
+            <div style="float: right; margin: auto;"> <!--div right-->
                 <div> <!--div atas-->
                     <div style="float: left; width: max-content;">
                         <form style="margin-top: 20px; margin-right: 20px;"> <!--search-->
@@ -61,7 +65,7 @@
                         </div>
                         
                     </div>
-                    <img src="logo.jpeg" style="width:200px; margin: 20px;" >
+                    <img src="image/logo.jpeg" style="width:200px; margin: 20px;" >
 
                 </div>
                 <div style="margin-top: 10px; width: auto;"> <!--div bawah-->
@@ -75,6 +79,75 @@
                 </div>
             </div>
         </div>    
+    </div>
+
+    <!-- Dashboard 2 -->
+    <div class="sub_Title" id="eventback">
+        <h1 style="color: #ffffff;">Event</h1>
+    <div class="garis_Bawah"></div>
+        <div style="width: 70vw; margin: 0 auto; margin-top: 20px;"> <!--ini daftar event, nanti mau dikasih scroll. sesuai mockup-->
+            <div style="float: left; width: 20vw; height: 80px; background-color: #FFBC95; background-size: 20%;">xasxmaksxmm</div>
+            <div style="width: auto; height: 80px; background-color:#FFE7D9; border-bottom-right-radius: 10px; border-top-right-radius: 10px;">cadcaca</div>
+        </div>    
+
+    <h2>Coba scroll</h2>
+    <div class="scroll">
+       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </div>
+    <br />      
+    <div class="auto">
+       The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+    </div>
+    </div>
+
+
+<!-- dashboard 3 -->
+    <div class="sub_title" style="height: 800px; padding: 10px; background-color: #FFBC95;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63227.18264649984!2d113.8281471!3d-7.9264826!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x833ecebadeeb023!2sUnni%20Korean%20Food!5e0!3m2!1sid!2sid!4v1604808451630!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    
+    </div>
+
+
+<!-- dashboard 4 -->
+    <div class="sub_Title" style="height: 67vh;"> <!--Dashboard 4-->
+        <h1 >Form Pesan</h1>
+        <div class="garis_Bawah"></div>
+
+        <div style="width: 85%; height: 100%; overflow: hidden; margin: 0 auto; margin-top: 30px; ">
+            <div style="width: 50%; height: 100%; float: left;">
+                <label for="nama" >Nama Anda :</label>
+                <br>
+                <input type="text" id="nama" class="input_style">
+                <br>
+                <label for="email">Email Anda :</label>
+                <br>
+                <input type="email"  id="email"class="input_style">
+                <br>
+                <label for="subyekPesan">Subyek Pesan :</label>
+                <br>
+                <input type="text"  id="subyekPesan"class="input_style">
+                <br>
+                <input type="button" value="Kirim" id="kirim" >
+            </div>
+
+            <div style="width: 50%; height: 100%; margin: 0 auto; float: right;">
+                <label for="isiPesan">Pesan Anda :</label>
+                <input type="text"  id="isiPesan"
+                    class="input_style"
+                    style="height: 88%;"
+                >
+            </div>
+        </div>
+
+        <div class="garis_Footer"></div>
+
+        <div style="text-align: center; margin: 0 auto;">
+            <pre>Whatsapp    |   Facebook    |   Grab   |    Instagram</pre>
+            <p>2016 - 2020 UNNI KOREAN FOODS</p>
+            <pre>Jalan Khairil Anwar Gang Melati 2
+    Badean, Bondowoso - Jawa Timur</pre>
+        </div>
+        <br>
     </div>
 
 </body>
