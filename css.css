@@ -27,7 +27,7 @@
     padding: 0px;
 
 }
-.scroll{
+/* .scroll{
     display:block;
     border: 1px solid red;
     padding:5px;
@@ -35,35 +35,29 @@
     width:300px;
     height:50px;
     overflow:scroll;
-}
-.auto{
+} */
+.scrollmenu{
     display:inline-block;
-    border: 1px solid red;
     padding:5px;
     margin-top:5px;
-    width:300px;
+    width:320px;
     height:60px;
-    overflow:auto;
+    overflow-x: auto;
     white-space: nowrap;
     background-color: whitesmoke;
 }
 
-.scroll{
-    width: 100vw;
-    background: orange;
-    padding: 10px;
-    overflow: scroll;
+.scrollevent{
+    background-color: hotpink;
+    margin-top: 20px;
+    margin: 0 auto;
+    width: 85%;
+    padding: 5px;
+    overflow-y: auto;
     height: 300px;
-    
-    /*script tambahan khusus untuk IE */
-    scrollbar-face-color: #CE7E00; 
-    scrollbar-shadow-color: #FFFFFF; 
-    scrollbar-highlight-color: #6F4709; 
-    scrollbar-3dlight-color: #FFFFFF; 
-    scrollbar-darkshadow-color: #6F4709; 
-    scrollbar-track-color: #FFE8C1; 
-    scrollbar-arrow-color: #6F4709;
-    }
+    display: block ;
+}
+
 
 
 /* dashboard 3 */
