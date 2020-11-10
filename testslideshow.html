@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba slide show</title>
+
+    <style>
+        @import url(cssslide.css);
+    </style>
+</head>
+<body>
+    <div class="container_slideshow"> <!--container-->
+
+        <div class="mySlides fade"><!--gambar 1-->
+            <img src="image/g1.jfif" alt="ini gambar 1" style="width: 200px;">
+
+        </div>
+        <div class="mySlides fade"><!--gambar 2-->
+            <img src="image/g4.jfif" alt="ini gambar 2" style="width: 200px;">
+
+        </div>
+        <div class="mySlides fade"><!--gambar 3-->
+            <img src="image/g7.jfif" alt="ini gambar 3" style="width: 200px;">
+
+        </div>
+        <div class="mySlides fade"><!--gambar 4-->
+            <img src="image/g8.jfif" alt="ini gambar 4" style="width: 200px;">
+
+        </div>
+        <div class="mySlides fade"><!--gambar 5-->
+            <img src="image/g10.jfif" alt="ini gambar 5" style="width: 200px;">
+
+        </div>
+    </div>
+    <br>
+    <div style="text-align: center;"><!--dot dibawah gambar-->
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <script src="jsslide.js"></script>
+    <!-- <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides(){
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length){slideIndex = 1}
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 1500);
+
+        }
+    </script> -->
+
+    
+</body>
+</html>
