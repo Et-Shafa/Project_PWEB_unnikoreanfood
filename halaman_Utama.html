@@ -7,6 +7,7 @@
 
     <style>
         @import url(css.css);
+        @import url(cssslide.css);
 
 		.search {
 			padding:8px 15px;
@@ -68,10 +69,10 @@
             <div style="float: right; margin: auto;"> <!--div right-->
                 <div> <!--div atas-->
                     <div style="float: left; width: max-content;">
-                        <form style="margin-top: 20px; margin-right: 20px;"> <!--search-->
+                        <div style="margin-top: 20px; text-align: center; position: relative;"> <!--search-->
                             <input class="button" type="button">
                             <input class="search" type="text" required>			
-                        </form>
+                        </div>
 
                         <div>
                             <ul>
@@ -96,7 +97,35 @@
 
                 </div>
             </div>
-        </div>    
+        </div>   
+        <div class="container_slideshow"> <!--container-->
+            <div class="mySlides fade"><!--gambar 1-->
+                <img src="image/g1.jfif" alt="ini gambar 1" style="width: 200px;">
+    
+            </div>
+            <div class="mySlides fade"><!--gambar 2-->
+                <img src="image/g4.jfif" alt="ini gambar 2" style="width: 200px;">
+    
+            </div>
+            <div class="mySlides fade"><!--gambar 3-->
+                <img src="image/g7.jfif" alt="ini gambar 3" style="width: 200px;">
+    
+            </div>
+            <div class="mySlides fade"><!--gambar 4-->
+                <img src="image/g8.jfif" alt="ini gambar 4" style="width: 200px;">
+    
+            </div>
+    
+            </div>
+        </div>
+        <br>
+        <div style="text-align: center;"><!--dot dibawah gambar-->
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <script src="jsslide.js"></script>
     </div>
     <!-- Dashboard 2 -->
     <div id="eventback">
