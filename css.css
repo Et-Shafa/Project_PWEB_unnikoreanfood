@@ -14,8 +14,22 @@
     float: left;
     margin-top: 70px;
     margin-left: 15%;
-    
+    text-shadow: 5px 4px 3px grey;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS'; 
 }
+#talamat{
+    margin-top: 10px; 
+    width: auto;
+    font-size: 20pt; 
+    text-align: center; 
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+
+
+
 
 /* dashboard 2 */
 #eventback{
@@ -31,9 +45,9 @@
     display:inline-block;
     padding:5px;
     margin-top:5px;
-    width:320px;
+    width:97%;
     height:60px;
-    overflow-x: auto;
+    overflow-y: auto;
     white-space: nowrap;
     background-color: whitesmoke;
 }
@@ -43,7 +57,7 @@
     margin: 0 auto;
     width: 85%;
     padding: 5px;
-    overflow-y: auto;
+    overflow-x: auto;
     height: 300px;
     display: block ;
 }
@@ -112,6 +126,59 @@
     font-weight: bold;
     padding-top: 15px;
 
+}
+
+
+
+
+
+
+/* /////////// */
+
+.search {
+    padding:8px 15px;
+    background:rgb(255, 255, 255);
+    border:0px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.button {
+    position:relative;
+    padding:8px 15px;
+    right:-3px;
+    background-image: url(image/search.png);
+    background-size: cover;
+    border:0px ;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+ul{
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0;
+    background-color: #E7C8B6;
+    border-bottom: solid black;
+    height: 30px;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);     
+    background: #666;    
+    width: 5px;
+}
+::-webkit-scrollbar-track-piece{
+    width: 10px;
+    
+}
+
+::-webkit-scrollbar-thumb {
+    background: #232323;
+    width: 10px;
 }
 
 
