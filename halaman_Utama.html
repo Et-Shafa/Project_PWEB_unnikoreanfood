@@ -8,20 +8,53 @@
     <style>
         @import url(css.css);
         @import url(cssslide.css);
-        li{
+        /* ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
             float: left;
-            /* border-bottom: black; */
-            font-size: 20pt;
-            /* color: black; */
-            display: inline;
-            
         }
-        a{
+
+        li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
             text-decoration: none;
-            
         }
-        /* li:hover a:hover{
-            background-color: #C09C87;
+
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+        li.dropdown {
+        display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+
+        .dropdown:hover .dropdown-content {
+        display: block;
         } */
     </style>
 </head>
@@ -32,20 +65,18 @@
                 <p>Enjoy the</p>
                 <p>Taste!!!</p>
             </div>
-            <div style="float: right; width: 50%; margin-top: 10px;"> <!--div right-->
+            <div style="float: right; width: 52%; margin-top: 10px;"> <!--div right-->
                 <div> <!--div atas-->
-                    <div style="float: left; width: max-content; ">
-                        <div style="margin-top: 20px;"> <!--search-->
+                    <div style="float: left; text-align: center; width: max-content; padding-top: 15px;">
+                        <div style="margin-top: 20px;height: min-content;width: fit-content; margin: 0 auto;"> <!--search-->
                             <input class="button" type="button">
-                            <input class="search" type="text">			
+                            <input class="search" type="text">		
+                            <div style="clear: both;"></div>	
                         </div>
                         <ul>
-                            <li><a href="halaman_Utama.html">Beranda</a></li>
-                            <!-- <li>    |    </li> -->
-                            <li><a href="#eventback">Event</a></li>
-                            <!-- <li>    |    </li> -->
-                            <li><a href="daftarmenu.html">Daftar Menu</a></li>
-                            <!-- <li>    |    </li> -->
+                            <li><a href="halaman_Utama.html">Beranda</a>|</li>
+                            <li><a href="#eventback">Event</a>|</li>
+                            <li><a href="daftarmenu.html">Daftar Menu</a>|</li>
                             <li><a href="">Contact Us</a></li>
                         </ul>
                         
@@ -58,23 +89,23 @@
             </div>
             <div style="clear: both;"></div>
         </div>   
-        <div style="margin: 40px;"> <!--bawah-->
+        <div style="margin: 30px 70px;"> <!--bawah-->
             <div style="float: left;">
                 <div class="container_slideshow"> <!--container-->
                     <div class="mySlides fade"><!--gambar 1-->
-                        <img src="image/g1.jfif" alt="ini gambar 1" style="width: 700px;">
+                        <img src="image/g1.jfif" alt="ini gambar 1" style="width: 600px;">
             
                     </div>
                     <div class="mySlides fade"><!--gambar 2-->
-                        <img src="image/g4.jfif" alt="ini gambar 2" style="width: 700px;">
+                        <img src="image/g4.jfif" alt="ini gambar 2" style="width: 600px;">
             
                     </div>
                     <div class="mySlides fade"><!--gambar 3-->
-                        <img src="image/g7.jfif" alt="ini gambar 3" style="width: 700px;">
+                        <img src="image/g7.jfif" alt="ini gambar 3" style="width: 600px;">
             
                     </div>
                     <div class="mySlides fade"><!--gambar 4-->
-                        <img src="image/g8.jfif" alt="ini gambar 4" style="width: 700px;">
+                        <img src="image/g8.jfif" alt="ini gambar 4" style="width: 600px;">
             
                     </div>
                 </div>
@@ -90,18 +121,41 @@
             
             <div id="talamat"> <!--div bawah-->
                 <p style="font-size: 40pt;">UNNI KOREAN FOOD</p>
-                <p>Rumah Makan Korea</p>
+                <p style="font-size: 30pt;">Rumah Makan Korea</p>
                 <p>Gang Melati 2 Jl. Khairil Anwar</p>
                 <p>Badean, Kec.Bondowoso</p>
                 <p>Bondowoso - Jawa Timur</p>
                 <br>
 
-                <button style="width: 150px; height: 50px;">menu lengkap kami</button>
+                <button style="width: 150px; height: 50px;"><a href="daftarmenu.html">menu lengkap kami</a></button>
             </div>
             <div style="clear: both;"></div>
         </div>
     </div>
     <!-- Dashboard 2 -->
+    <div class="sub_title" style="height: 800px; background-size: 100vw; padding: 2%; background-color: #FFBC95;">
+        <div style="height: 450px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63227.18264649984!2d113.8281471!3d-7.9264826!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x833ecebadeeb023!2sUnni%20Korean%20Food!5e0!3m2!1sid!2sid!4v1604808451630!5m2!1sid!2sid"
+            width="55%"
+            height="100%"
+            frameborder="0" 
+            style="border:0; float: left;" 
+            allowfullscreen="" 
+            aria-hidden="false" 
+            tabindex="0"></iframe>
+            <div style="height: 100%; width: 43%; float: right; background-color: #FFE7D9;"></div>
+        </div>
+        <div class="scrollmenu" style="height: 280px; background-color: whitesmoke; margin-top: 2%; padding: 20px;">
+            <img src="image/g4.jfif" class="food" alt="">
+            <img src="image/g7.jfif" class="food" alt="">
+            <img src="image/g8.jfif" class="food" alt="">
+            <img src="image/g6.jfif" class="food" alt="">
+            <img src="image/g9.jfif" class="food" alt="">
+
+        </div>
+    </div>
+    
+<!-- dashboard 3 -->
     <div id="eventback">
         <p class="sub_Title" style="color: #ffffff;">Event</p>
         <div class="garis_Bawah"></div>
@@ -125,27 +179,7 @@
         </div>  
 
     </div>
-<!-- dashboard 3 -->
-    <div class="sub_title" style="height: 800px; background-size: 100vw; padding: 2%; background-color: #FFBC95;">
-        <div style="height: 450px;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63227.18264649984!2d113.8281471!3d-7.9264826!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x833ecebadeeb023!2sUnni%20Korean%20Food!5e0!3m2!1sid!2sid!4v1604808451630!5m2!1sid!2sid"
-            width="55%"
-            height="100%"
-            frameborder="0" 
-            style="border:0; float: left;" 
-            allowfullscreen="" 
-            aria-hidden="false" 
-            tabindex="0"></iframe>
-            <div style="height: 100%; width: 43%; float: right; background-color: #FFE7D9;"></div>
-        </div>
-        <div class="scrollmenu" style="height: 280px; background-color: whitesmoke; margin-top: 2%; padding: 20px;">
-            <img src="image/g4.jfif" class="food" alt="">
-            <img src="image/g7.jfif" class="food" alt="">
-            <img src="image/g8.jfif" class="food" alt="">
-            <img src="image/g6.jfif" class="food" alt="">
-
-        </div>
-    </div>
+    
 <!-- dashboard 4 -->
     <div  style="height: 67vh;"> <!--Dashboard 4-->
         <p class="sub_Title">Form Pesan</p>

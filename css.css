@@ -5,7 +5,7 @@
     background-size: 100vw 100%;
     background-image: url(image/mainbg.png);
     background-repeat: no-repeat;
-    height: 900px;
+    height: 700px;
     margin: 0px;
     padding: 0px;
 }
@@ -13,7 +13,7 @@
     text-align: center;
     font-size: 50pt;
     float: left;
-    margin-top: 70px;
+    margin-top: 40px;
     margin-left: 10%;
     text-shadow: 5px 4px 3px grey;
     font-weight: bolder;
@@ -38,7 +38,7 @@
     background-image:url(image/eventbg.png);
     background-size: 100vw 100%;
     background-repeat: no-repeat;
-    height: 800px;
+    height: 850px;
     margin: 0px;
     padding: 0px;
 
@@ -138,6 +138,7 @@
 /* /////////// */
 
 .search {
+    
     padding:8px 15px;
     background:rgb(255, 255, 255);
     border:0px;
@@ -145,6 +146,7 @@
     border-top-right-radius: 5px;
 }
 .button {
+    float: left;
     padding:8px 15px;
     right:-0px;
     background-image: url(image/search.png);
@@ -156,11 +158,28 @@
 ul{
     margin-top: 10px;
     list-style-type: none;
-    /* padding: 0;
-    background-color: #E7C8B6;
+    padding: 0;
     border-bottom: solid black;
-    height: 30px; */
+    height: 27px;
     
+}
+li{
+    float: left;
+    border-bottom: black;
+    font-size: 14pt;
+    display: inline;
+    margin: 0;
+    
+}
+a{
+    text-decoration: none;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    color: black;
+    padding: 14px 16px;
+    
+}
+li:hover{
+    background-color: #E7C8B6;
 }
 
 
