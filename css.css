@@ -1,9 +1,10 @@
 /* Dashboard 1 */
 *{margin: 0; padding: 0;}
 #d1{
+    position: relative;
+    background-size: 100vw 100%;
     background-image: url(image/mainbg.png);
     background-repeat: no-repeat;
-    background-size: 100vw 100%;
     height: 900px;
     margin: 0px;
     padding: 0px;
@@ -13,7 +14,7 @@
     font-size: 50pt;
     float: left;
     margin-top: 70px;
-    margin-left: 15%;
+    margin-left: 10%;
     text-shadow: 5px 4px 3px grey;
     font-weight: bolder;
     font-family: 'Trebuchet MS'; 
@@ -25,6 +26,7 @@
     text-align: center; 
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    float: right;
 }
 
 
@@ -143,9 +145,8 @@
     border-top-right-radius: 5px;
 }
 .button {
-    position:relative;
     padding:8px 15px;
-    right:-3px;
+    right:-0px;
     background-image: url(image/search.png);
     background-size: cover;
     border:0px ;
@@ -155,10 +156,11 @@
 ul{
     margin-top: 10px;
     list-style-type: none;
-    padding: 0;
+    /* padding: 0;
     background-color: #E7C8B6;
     border-bottom: solid black;
-    height: 30px;
+    height: 30px; */
+    
 }
 
 

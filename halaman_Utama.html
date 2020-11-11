@@ -8,86 +8,97 @@
     <style>
         @import url(css.css);
         @import url(cssslide.css);
-        li a{
+        li{
             float: left;
-            border-bottom: black;
+            /* border-bottom: black; */
             font-size: 20pt;
-            text-decoration: none;
-            color: black;
+            /* color: black; */
+            display: inline;
             
         }
-        li:hover a:hover{
-            background-color: #C09C87;
+        a{
+            text-decoration: none;
+            
         }
+        /* li:hover a:hover{
+            background-color: #C09C87;
+        } */
     </style>
 </head>
 <body> 
     <div id="d1"> <!--div Dashboard 1-->
-        <div>   <!--atas-->
+        <div style="width: 98%; margin: 0 auto;">   <!--atas-->
             <div id="tenjoy"> <!--div left-->
                 <p>Enjoy the</p>
                 <p>Taste!!!</p>
-
             </div>
-            <div style="float: right; margin-top: 10px;"> <!--div right-->
+            <div style="float: right; width: 50%; margin-top: 10px;"> <!--div right-->
                 <div> <!--div atas-->
-                    <div style="float: left; width: max-content;position: relative; text-align: center;">
+                    <div style="float: left; width: max-content; ">
                         <div style="margin-top: 20px;"> <!--search-->
                             <input class="button" type="button">
                             <input class="search" type="text">			
                         </div>
-                        <div>
-                            <ul>
-                                <li><a href="halaman_Utama.html">Beranda</a></li>
-                                <li>    |    </li>
-                                <li><a href="event.html">Event</a></li>
-                                <li>    |    </li>
-                                <li><a href="daftarmenu.html">Daftar Menu</a></li>
-                                <li>    |    </li>
-                                <li><a href="">Contact Us</a></li>
-                            </ul>
-                            <!-- <hr style="background-color: black; height: 1.5px;"> -->
-                        </div>
+                        <ul>
+                            <li><a href="halaman_Utama.html">Beranda</a></li>
+                            <!-- <li>    |    </li> -->
+                            <li><a href="#eventback">Event</a></li>
+                            <!-- <li>    |    </li> -->
+                            <li><a href="daftarmenu.html">Daftar Menu</a></li>
+                            <!-- <li>    |    </li> -->
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
                         
                     </div>
                     <img src="image/logo.jpeg" style="width:200px; margin: 10px; float: right;" >
                     <div style="clear: both;"></div>
 
                 </div>
-                <div id="talamat"> <!--div bawah-->
-                    <p>Jalan Khairil Anwar Gang Melati 2</p>
-                    <p>Badean, Bondowoso - Jawa Timur</p>
-                </div>
+                
             </div>
             <div style="clear: both;"></div>
         </div>   
-        <div style="margin: 40px; float: left;"> <!--bawah-->
-            <div class="container_slideshow"> <!--container-->
-                <div class="mySlides fade"><!--gambar 1-->
-                    <img src="image/g1.jfif" alt="ini gambar 1" style="width: 700px;">
-        
+        <div style="margin: 40px;"> <!--bawah-->
+            <div style="float: left;">
+                <div class="container_slideshow"> <!--container-->
+                    <div class="mySlides fade"><!--gambar 1-->
+                        <img src="image/g1.jfif" alt="ini gambar 1" style="width: 700px;">
+            
+                    </div>
+                    <div class="mySlides fade"><!--gambar 2-->
+                        <img src="image/g4.jfif" alt="ini gambar 2" style="width: 700px;">
+            
+                    </div>
+                    <div class="mySlides fade"><!--gambar 3-->
+                        <img src="image/g7.jfif" alt="ini gambar 3" style="width: 700px;">
+            
+                    </div>
+                    <div class="mySlides fade"><!--gambar 4-->
+                        <img src="image/g8.jfif" alt="ini gambar 4" style="width: 700px;">
+            
+                    </div>
                 </div>
-                <div class="mySlides fade"><!--gambar 2-->
-                    <img src="image/g4.jfif" alt="ini gambar 2" style="width: 700px;">
-        
+                <br>
+                <div style="text-align: center;"><!--dot dibawah gambar-->
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
                 </div>
-                <div class="mySlides fade"><!--gambar 3-->
-                    <img src="image/g7.jfif" alt="ini gambar 3" style="width: 700px;">
-        
-                </div>
-                <div class="mySlides fade"><!--gambar 4-->
-                    <img src="image/g8.jfif" alt="ini gambar 4" style="width: 700px;">
-        
-                </div>
+                <script src="jsslide.js"></script>
             </div>
-            <br>
-            <div style="text-align: center;"><!--dot dibawah gambar-->
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+            
+            <div id="talamat"> <!--div bawah-->
+                <p style="font-size: 40pt;">UNNI KOREAN FOOD</p>
+                <p>Rumah Makan Korea</p>
+                <p>Gang Melati 2 Jl. Khairil Anwar</p>
+                <p>Badean, Kec.Bondowoso</p>
+                <p>Bondowoso - Jawa Timur</p>
+                <br>
+
+                <button style="width: 150px; height: 50px;">menu lengkap kami</button>
             </div>
-            <script src="jsslide.js"></script>
+            <div style="clear: both;"></div>
         </div>
     </div>
     <!-- Dashboard 2 -->
