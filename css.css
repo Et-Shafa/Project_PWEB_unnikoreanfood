@@ -1,5 +1,8 @@
 /* Dashboard 1 */
 *{margin: 0; padding: 0;}
+html{
+    scroll-behavior: smooth;
+}
 #d1{
     position: relative;
     background-size: 100vw 100%;
@@ -28,7 +31,6 @@
     font-weight: bold;
     float: right;
 }
-
 
 
 
@@ -62,6 +64,26 @@
     overflow-x: auto;
     height: 300px;
     display: block ;
+}
+.eventTanggal{
+    float: left; 
+    width: 20vw; 
+    height: 90px; 
+    background-color: #FFBC95; 
+    background-size: 20%;
+
+}
+.eventKet{
+    width: auto; 
+    height: 90px; 
+    background-color:#FFE7D9; 
+    border-bottom-right-radius: 10px; 
+    border-top-right-radius: 10px;
+
+}
+
+.navbaraktif{
+    background-color: #E7C8B6;
 }
 
 
@@ -160,16 +182,15 @@ ul{
     list-style-type: none;
     padding: 0;
     border-bottom: solid black;
-    height: 27px;
+    height: 32px;
     
 }
 li{
     float: left;
+    height: 30px;
     border-bottom: black;
     font-size: 14pt;
     display: inline;
-    margin: 0;
-    
 }
 a{
     text-decoration: none;

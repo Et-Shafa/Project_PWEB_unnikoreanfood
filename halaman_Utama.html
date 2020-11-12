@@ -8,60 +8,36 @@
     <style>
         @import url(css.css);
         @import url(cssslide.css);
-        html{
-            scroll-behavior: smooth;
-        }
-        /* ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-        }
-
-        li {
-            float: left;
-        }
-
-        li a, .dropbtn {
-            display: inline-block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover, .dropdown:hover .dropbtn {
-            background-color: red;
-        }
-        li.dropdown {
-        display: inline-block;
-        }
-
+        
+        /* style dropdown pada div (hidden div) */
         .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
+          display: none;
+          position: absolute;
+          background-color: #E7C8B6;
+          min-width: 123px;
+          margin-top: 10px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.425);
         }
-
+        
+        /* style dropdown pada a (memunculkan display) */
         .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
+          color: black;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+          border-bottom: thin black;
         }
-        .dropdown-content a:hover {background-color: #f1f1f1;}
-
+        
+        /* hover pada dropdown */
+        .dropdown-content a:hover {
+            background-color: #D7B6A3;
+        }
+        
+        /* menampilkan dropdown */
         .dropdown:hover .dropdown-content {
-        display: block;
-        } */
-        .navbaraktif{
-            background-color: #E7C8B6;
+          display: block;
         }
+        
     </style>
 </head>
 <body> 
@@ -81,17 +57,21 @@
                         </div>
                         <ul>
                             <li class="navbaraktif"><a href="halaman_Utama.html">Beranda</a>|</li>
-                            <li><a href="#eventback">Event</a>|</li>
                             <li><a href="daftarmenu.html">Daftar Menu</a>|</li>
-                            <li><a href="">Contact Us</a></li>
+                            <li class="navbaraktif"><a href="#eventback">Event</a>|</li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0)">Contact Us</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </li>
                         </ul>
-                        
                     </div>
                     <img src="image/logo.jpeg" style="width:200px; margin: 10px; float: right;" >
                     <div style="clear: both;"></div>
-
                 </div>
-                
             </div>
             <div style="clear: both;"></div>
         </div>   
@@ -149,7 +129,9 @@
             allowfullscreen="" 
             aria-hidden="false" 
             tabindex="0"></iframe>
-            <div style="height: 100%; width: 43%; float: right; background-color: #FFE7D9;"></div>
+            <div style="height: 100%; width: 43%; float: right; background-color: #FFE7D9;">
+                <p>Tentang Kami</p>
+            </div>
         </div>
         <div class="scrollmenu" style="height: 280px; background-color: whitesmoke; margin-top: 2%; padding: 20px;">
             <img src="image/g4.jfif" class="food" alt="">
@@ -166,22 +148,26 @@
         <p class="sub_Title" style="color: #ffffff;">Event</p>
         <div class="garis_Bawah"></div>
         <div class="scrollevent">
-            <div style="width: 80vw; margin: 0 auto; margin-bottom: 20px;"> <!--ini daftar event, nanti mau dikasih scroll. sesuai mockup-->
-                <div style="float: left; width: 20vw; height: 90px; background-color: #FFBC95; background-size: 20%;">xasxmaksxmm</div>
-                <div style="width: auto; height: 90px; background-color:#FFE7D9; border-bottom-right-radius: 10px; border-top-right-radius: 10px;">cadcaca</div>
-            </div>  
-            <div style="width: 80vw; margin: 0 auto; margin-bottom: 20px;"> <!--ini daftar event, nanti mau dikasih scroll. sesuai mockup-->
-                <div style="float: left; width: 20vw; height: 90px; background-color: #FFBC95; background-size: 20%;">xasxmaksxmm</div>
-                <div style="width: auto; height: 90px; background-color:#FFE7D9; border-bottom-right-radius: 10px; border-top-right-radius: 10px;">cadcaca</div>
-            </div>  
-            <div style="width: 80vw; margin: 0 auto; margin-bottom: 20px;"> <!--ini daftar event, nanti mau dikasih scroll. sesuai mockup-->
-                <div style="float: left; width: 20vw; height: 90px; background-color: #FFBC95; background-size: 20%;">xasxmaksxmm</div>
-                <div style="width: auto; height: 90px; background-color:#FFE7D9; border-bottom-right-radius: 10px; border-top-right-radius: 10px;">cadcaca</div>
-            </div>  
-            <div style="width: 80vw; margin: 0 auto; margin-bottom: 20px;"> <!--ini daftar event, nanti mau dikasih scroll. sesuai mockup-->
-                <div style="float: left; width: 20vw; height: 90px; background-color: #FFBC95; background-size: 20%;">xasxmaksxmm</div>
-                <div style="width: auto; height: 90px; background-color:#FFE7D9; border-bottom-right-radius: 10px; border-top-right-radius: 10px;">cadcaca</div>
-            </div>  
+            <div style="width: 80vw; margin: 0 auto; margin-bottom: 20px;"> 
+                <div class="eventTanggal">xasxmaksxmm</div>
+                <div class="eventKet">cadcaca</div>
+            </div>
+            <div style="width: 80vw; margin: 0 auto; margin-bottom: 20px;"> 
+                <div class="eventTanggal">xasxmaksxmm</div>
+                <div class="eventKet">cadcaca</div>
+            </div>
+            <div style="width: 80vw; margin: 0 auto; margin-bottom: 20px;"> 
+                <div class="eventTanggal">xasxmaksxmm</div>
+                <div class="eventKet">cadcaca</div>
+            </div>
+            <div style="width: 80vw; margin: 0 auto; margin-bottom: 20px;"> 
+                <div class="eventTanggal">xasxmaksxmm</div>
+                <div class="eventKet">cadcaca</div>
+            </div>
+            <div style="width: 80vw; margin: 0 auto; margin-bottom: 20px;"> 
+                <div class="eventTanggal">xasxmaksxmm</div>
+                <div class="eventKet">cadcaca</div>
+            </div>
         </div>  
 
     </div>
