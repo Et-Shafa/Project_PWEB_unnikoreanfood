@@ -24,7 +24,7 @@ html{
 }
 #talamat{
     float: right;
-    width: auto;
+    width: 50%;
     font-size: 20pt; 
     text-align: center; 
     font-family: 'Courier New', Courier, monospace;
@@ -48,10 +48,10 @@ html{
 .scrollevent{
     background-color: #00000025;
     margin: 0 auto;
-    width: 85%;
+    width: min-content;
     padding: 5px;
     overflow-x: auto;
-    height: 300px;
+    height: 80%;
     display: block ;
 }
 .scrollmenu{
@@ -66,15 +66,15 @@ html{
 }
 .eventTanggal{
     float: left; 
-    width: 20vw; 
-    height: 90px; 
+    width: 120px; 
+    height: 120px; 
     background-color: #FFBC95; 
     background-size: 20%;
 
 }
 .eventKet{
     width: auto; 
-    height: 90px; 
+    height: 120px; 
     background-color:#FFE7D9; 
     border-bottom-right-radius: 10px; 
     border-top-right-radius: 10px;
@@ -135,6 +135,7 @@ html{
     margin-top: 30px;
     align-items: center;
     width: 30%;
+    margin-left: 30%;
 }
 .garis_Footer{
     background: #E1D1B7;
@@ -149,6 +150,10 @@ html{
     font-weight: bold;
     padding-top: 15px;
 
+}
+label{
+    font-size: 15pt;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 
