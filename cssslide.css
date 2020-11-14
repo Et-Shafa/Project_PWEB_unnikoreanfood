@@ -3,7 +3,7 @@
 
 .container_slideshow{
     text-align: center;
-    width: 600px;
+    width: min-content;
     position: relative;
     margin: auto;
     box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.589);

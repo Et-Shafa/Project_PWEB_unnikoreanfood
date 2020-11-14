@@ -7,6 +7,37 @@
     <style>
       @import url(css.css);
       @import url(menu.css);
+      .containerdaftarmenu{
+            display: flex;
+            width: 90%;
+            background-color: coral;
+            padding: 15px;
+            overflow-y: auto;
+            margin: 0 auto;
+            margin-top: 200px;
+        }
+        .menu{
+            width: 250px;
+            height: 210px;
+            background-color: cornflowerblue;
+            margin-right: 15px;
+            box-shadow: 1px 1px 4px black;
+    
+        }
+        .menu1{
+            width: 250px;
+            background-color: cornsilk;
+            display: none;
+            position: absolute;
+            margin: 0 auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.425);
+            
+        }
+        .menu:hover .menu1{
+            display: block;
+            transform: scale(1.3);
+            transition: ease-out 3s;
+        }
     </style>
 </head>
 <body>
@@ -34,60 +65,62 @@
 
         </div>
       </div>
-      <div style="clear: both;"></div>
+
+      
+
+      <div style="clear: both;"></div> <!--agar heigh div sesuai-->
     </div>   
     
   </div>
-
-
+  
   <div> <!-- Menu -->
-       <div class="responsive">
-  <div class="menu">
-    <a target="_blank" href="toboki.jpeg">
-      <img src="image/toboki.jpeg" alt="Cinque Terre" width="300" height="400">
-    </a>
-    <h6>TTEOKBOKKI<h6>
-    <h6>Rating : ⭐⭐⭐⭐⭐</h6>
-  <h6>Harga : 15.000 <h6>
-<h6>Deskripsi : <h6>
-<h6>Garetteok atau rice cake yang dimasak dengan bumbu dan gochujang serta tambahan gochugaru yang membuat rasa pedas<h6>
+    <div class="responsive">
+      <div class="menu">
+        <a target="_blank" href="toboki.jpeg">
+          <img src="image/toboki.jpeg" alt="Cinque Terre" width="300">
+        </a>
+        <h6>TTEOKBOKKI<h6>
+        <h6>Rating : ⭐⭐⭐⭐⭐</h6>
+        <h6>Harga : 15.000 <h6>
+        <h6>Deskripsi : <h6>
+        <h6>Garetteok atau rice cake yang dimasak dengan bumbu dan gochujang serta tambahan gochugaru yang membuat rasa pedas<h6>
    
 
+      </div>
+    </div>
+
+
+  <div class="responsive">
+    <div class="menu">
+      <a target="_blank" href="hotang.jpeg">
+        <img src="image/hotang.jpeg" alt="hotang" width="300">
+      </a>
+      <h6>HOTANG<h6>
+      <h6>Rating : ⭐⭐⭐⭐⭐</h6>
+      <h6>Harga : 10.000 isi 2 tusuk<h6>
+      <h6>Deskripsi :</h6>
+      <h6>Terbuat dari kentang dan sosis.</h6>
+
+    </div>
   </div>
-</div>
 
-
-<div class="responsive">
-  <div class="menu">
-    <a target="_blank" href="hotang.jpeg">
-      <img src="image/hotang.jpeg" alt="hotang" width="300" height="400">
-    </a>
-    <h6>HOTANG<h6>
-<h6>Rating : ⭐⭐⭐⭐⭐</h6>
-<h6>Harga : 10.000 isi 2 tusuk<h6>
-<h6>Deskripsi :</h6>
-<h6>Terbuat dari kentang dan sosis.</h6>
-
+  <div class="responsive">
+    <div class="menu">
+      <a target="_blank" href="hot chiken.jpeg">
+        <img src="image/hot chiken.jpeg" alt="Hot chiken" width="300">
+      </a>
+    <h6>HOT CHICKEN KOREA</h6> 
+  <h6>Rating : ⭐⭐⭐⭐⭐</h6>
+  <h6>Harga : 17.000</h6>
+  <h6>Deskripsi :</h6>
+  <h6>Ayam yang dibalur dengan campuran bumbu gochujang dan gochugaru yang membuat rasa pedas di lidah</h6>
+    </div>
   </div>
-</div>
-
-<div class="responsive">
-  <div class="menu">
-    <a target="_blank" href="hot chiken.jpeg">
-      <img src="image/hot chiken.jpeg" alt="Hot chiken" width="300" height="400">
-    </a>
-   <h6>HOT CHICKEN KOREA</h6> 
-<h6>Rating : ⭐⭐⭐⭐⭐</h6>
-<h6>Harga : 17.000</h6>
-<h6>Deskripsi :</h6>
-<h6>Ayam yang dibalur dengan campuran bumbu gochujang dan gochugaru yang membuat rasa pedas di lidah</h6>
-  </div>
-</div>
 
 <div class="responsive">
   <div class="menu">
     <a target="_blank" href="bimbimbap.jpeg">
-      <img src="image/bimbimbap.jpeg" alt="bimbimbap" width="300" height="400">
+      <img src="image/bimbimbap.jpeg" alt="bimbimbap" width="300">
     </a>
    <h6>BIBIMBAP</h6> 
 <h6>Rating : ⭐⭐⭐⭐</h6>
@@ -101,7 +134,7 @@
 <div class="responsive">
     <div class="menu">
       <a target="_blank" href="nasi goreng.jpeg">
-        <img src="image/Nasi Goreng.jpeg" alt="nasi goreng" width="300" height="400">
+        <img src="image/Nasi Goreng.jpeg" alt="nasi goreng" width="300">
       </a>
       <h6>NASI GORENG KIMCHI</h6>
 <h6>Rating : ⭐⭐⭐⭐</h6>
@@ -114,7 +147,7 @@
   <div class="responsive">
     <div class="menu">
       <a target="_blank" href="kimbap.jpeg">
-        <img src="image/kimbap.jpeg" alt="kimbap" width="300" height="400">
+        <img src="image/kimbap.jpeg" alt="kimbap" width="300">
       </a>
       <H6>KIMBAP</H6>
       <H6>Rating : ⭐⭐⭐⭐⭐</H6>
@@ -127,7 +160,7 @@
   <div class="responsive">
     <div class="menu">
       <a target="_blank" href="Jajangmyeon.jpeg">
-        <img src="image/Jajangmyeon.jpeg" alt="Jajangmyeon" width="300" height="400">
+        <img src="image/Jajangmyeon.jpeg" alt="Jajangmyeon" width="300" >
       </a>
       <H6>JAJANGMYEON</H6>
       <h6>Rating : ⭐⭐⭐⭐</h6>
@@ -140,7 +173,7 @@
   <div class="responsive">
     <div class="menu">
       <a target="_blank" href="odeng.jpeg">
-        <img src="image/odeng.jpeg" alt="Odeng" width="300" height="400">
+        <img src="image/odeng.jpeg" alt="Odeng" width="300" >
       </a>
       <H6>ODENG</H6>
       <h6>Rating : ⭐⭐⭐⭐</h6>
@@ -154,7 +187,7 @@
   <div class="responsive">
     <div class="menu">
       <a target="_blank" href="salad buah.jpeg">
-        <img src="image/salad buah.jpeg" alt="salad buah" width="300" height="400">
+        <img src="image/salad buah.jpeg" alt="salad buah" width="300">
       </a>
       <h6>SALAD BUAH</h6>
       <h6>Rating : ⭐⭐⭐⭐⭐</h6>
@@ -167,7 +200,7 @@
   <div class="responsive">
     <div class="menu">
       <a target="_blank" href="salad sayur.jpeg">
-        <img src="image/salad sayur.jpeg" alt="Salad Sayur" width="300" height="400">
+        <img src="image/salad sayur.jpeg" alt="Salad Sayur" width="300">
       </a>
       <h6>SALAD SAYUR</h6>
       <h6>Rating : ⭐⭐⭐⭐⭐</h6>
@@ -181,7 +214,7 @@
   <div class="responsive">
     <div class="menu">
       <a target="_blank" href="oppa manggo.jpeg">
-        <img src="image/oppa manggo.jpeg" alt="Oppa Manggo" width="300" height="400">
+        <img src="image/oppa manggo.jpeg" alt="Oppa Manggo" width="300">
       </a>
       <h6>OPPA MANGGO</h6>
       <h6>Rating : ⭐⭐⭐⭐⭐</h6>
@@ -195,7 +228,7 @@
   <div class="responsive">
     <div class="menu">
       <a target="_blank" href="milkshake.jpeg">
-        <img src="image/milkshake.jpeg" alt="milkshake" width="300" height="400">
+        <img src="image/milkshake.jpeg" alt="milkshake" width="300">
       </a>
       <h6>MILKSHAKE</h6>
       <h6>Rating : ⭐⭐⭐⭐⭐</h6>
@@ -212,6 +245,11 @@
 
 <div style="padding:6px;">
 <!-- Akhir Menu -->
-  
+
+
+
+
+
+
 </body>
 </html>
