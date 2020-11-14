@@ -8,86 +8,178 @@
       @import url(css.css);
       @import url(menu.css);
       .containerdaftarmenu{
-            display: flex;
-            width: 90%;
-            background-color: coral;
-            padding: 15px;
-            overflow-y: auto;
-            margin: 0 auto;
-            margin-top: 200px;
-        }
-        .menu{
-            width: 250px;
-            height: 210px;
-            background-color: cornflowerblue;
-            margin-right: 15px;
-            box-shadow: 1px 1px 4px black;
-    
-        }
-        .menu1{
-            width: 250px;
-            background-color: cornsilk;
-            display: none;
-            position: absolute;
-            margin: 0 auto;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.425);
-            
-        }
-        .menu:hover .menu1{
-            display: block;
-            transform: scale(1.3);
-            transition: ease-out 3s;
-        }
+        display: flex;
+        width: 90%;
+        background-color: #e1dbc6a2;
+        padding: 15px;
+        overflow-y: auto;
+        margin: 0 auto;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.452);
+        
+      }
+      .menu{
+        width: min-content;
+        height: min-content;
+        background-color: #D7B6A3;
+        margin-right: 15px;
+        box-shadow: 1px 1px 4px black;
+
+      }
+      .menu1{
+        width: min-content;
+        height: min-content;
+        background-color: rgb(233, 216, 184);
+        display: none;
+        position: absolute;
+        margin: 0 auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.425);
+          
+      }
+      .menu:hover .menu1{
+        display: block;
+        transform: scale(1.3);
+      }
+      .pdaftarmenu{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 40px;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        font-size: 15pt;
+        font-weight: bold;
+        color:rgb(29, 29, 29);
+
+      }
+      .pketmenu{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 8pt;
+
+      }
     </style>
 </head>
 <body>
   <div id="d1"> <!--div Dashboard 1-->
     <div style="width: 98%; margin: 0 auto;">   <!--atas-->
-      <div style="float: right; width: 52%; margin-top: 10px;"> <!--div right-->
-        <div> <!--div atas-->
-          <div style="float: left; text-align: center; width: max-content; padding-top: 15px;">
-            <div style="margin-top: 20px;height: min-content;width: fit-content; margin: 0 auto;"> <!--search-->
-                <input class="button" type="button">
-                <input class="search" type="text">	
-            </div>	
-            <div>
-                <ul>
-                    <li><a href="halaman_Utama.html">Beranda</a></li>
-                    <li><a href="halaman_Utama.html#eventback">Event</a></li>
-                    <li><a href="daftarmenu.html">Daftar Menu</a></li>
-                    <li><a href="">Contact Us</a></li>
-                </ul>
-            </div>
-            
-          </div>
-          <img src="image/logo.jpeg" style="width:200px; margin: 10px; float: right;" >
-          <div style="clear: both;"></div>
-
+        <div id="tenjoy"> <!--div left-->
+            <p>Enjoy the</p>
+            <p>Taste!!!</p>
         </div>
-      </div>
-
-      
-
-      <div style="clear: both;"></div> <!--agar heigh div sesuai-->
-    </div>   
-    
-  </div>
-  
-  <div> <!-- Menu -->
-    <div class="responsive">
-      <div class="menu">
-        <a target="_blank" href="toboki.jpeg">
-          <img src="image/toboki.jpeg" alt="Cinque Terre" width="300">
-        </a>
-        <h6>TTEOKBOKKI<h6>
-        <h6>Rating : ⭐⭐⭐⭐⭐</h6>
-        <h6>Harga : 15.000 <h6>
-        <h6>Deskripsi : <h6>
-        <h6>Garetteok atau rice cake yang dimasak dengan bumbu dan gochujang serta tambahan gochugaru yang membuat rasa pedas<h6>
-   
-
-      </div>
+        <div style="float: right; width: 52%; margin-top: 10px;"> <!--div right-->
+            <div> <!--div atas-->
+                <div style="float: left; text-align: center; width: max-content; padding-top: 15px;">
+                    <div style="margin-top: 20px;height: min-content;width: fit-content; margin: 0 auto;"> <!--search-->
+                        <input class="button" type="button">
+                        <input class="search" type="text">		
+                        <div style="clear: both;"></div>	
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Beranda</a>|</li>
+                        <li class="navbaraktif"><a href="daftarmenu.html">Daftar Menu</a>|</li>
+                        <li><a href="#eventback">Event</a>|</li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)">Contact Us</a>
+                            <div class="dropdown-content">
+                                <a href="https://api.whatsapp.com/send?phone=6282234078626&text=Hai" target="_blank" style="font-size: 15px;"> <img src="image/whatsapp (1).png" style="width: 20px;" alt=""> Whatsapp</a>
+                                <a href="https://id-id.facebook.com/pages/category/Shopping---Retail/Unni-Korean-Food-Bondowoso-167677286755311/" style="font-size: 15px;"> <img src="image/facebook (1).png" style="width: 20px;" alt=""> Facebook</a>
+                                <a href="https://food.grab.com/id/id/restaurant/unni-korean-food-bondowoso-delivery/6-CY4UCT5VC2UDN2" style="font-size: 15px;"> <img src="image/grab.png" style="width: 40px;" alt=""> Grab</a>                
+                                <a href="#" style="font-size: 15px;"> <img src="image/instagram (1).png" style="width: 20px;" alt=""> Instagram</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <img src="image/logo.jpeg" style="width:200px; margin: 10px; float: right;" >
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
     </div>
+</div>
+
+<div>
+  <p class="pdaftarmenu">Makanan</p>
+  <div class="containerdaftarmenu">
+    <div class="menu">
+        <div class="menu1">
+            <img src="image/toboki.jpeg" style="height: 170px;">
+            <div style="padding: 10px; text-align: justify;">
+                <p style="font-family: Comic Sans MS, cursive; font-size: 10pt;">TTEOKBOKKI</p>
+                <hr style="border-color: black; height: 0.1;">
+                <p class="pketmenu" style="margin-bottom: 1px;"><b>Rating :</b> ⭐⭐⭐⭐⭐</p>
+                <p class="pketmenu" style="margin-bottom: 1px;"></p><b></b>Harga :</b> Rp 15.000</p>
+                <p class="pketmenu"><b>Deskripsi :</b> Garetteok atau rice cake yang dimasak dengan bumbu dan gochujang serta tambahan gochugaru yang membuat rasa pedas.</p>
+                                
+            </div>
+        </div>
+        <img src="image/toboki.jpeg" style="height: 170px">
+        <p style="text-align: center; font-family: Comic Sans MS, cursive;">TTEOKBOKKI</p>
+
+    
+
+
+    </div>
+  </div>
+
+  <p class="pdaftarmenu" >Minuman</p>
+  <div class="containerdaftarmenu">
+    <div class="menu">
+        <div class="menu1">
+            <img src="image/milkshake.jpeg" style="height: 170px;">
+            <div style="padding: 10px; text-align: justify;">
+                <p style="font-family: Comic Sans MS, cursive; font-size: 10pt;">MILKSHAKE</p>
+                <hr style="border-color: black; height: 0.1;">
+                <p class="pketmenu" style="margin-bottom: 1px;"><b>Rating :</b> ⭐⭐⭐⭐⭐</p>
+                <p class="pketmenu" style="margin-bottom: 1px;"></p><b></b>Harga :</b> Rp 8.000</p>
+                <p class="pketmenu"><b>Deskripsi :</b> Minuman dingin dari campuran susu,cheese,dan jelly.</p>
+                                
+            </div>
+        </div>
+        <img src="image/milkshake.jpeg" style="height: 170px">
+        <p style="text-align: center; font-family: Comic Sans MS, cursive;">MILKSHAKE</p>
+
+    
+
+
+    </div>
+  </div>
+  <p class="pdaftarmenu">Salad</p>
+  <div class="containerdaftarmenu">
+    <div class="menu">
+        <div class="menu1">
+            <img src="image/salad buah.jpeg" style="height: 170px;">
+            <div style="padding: 10px; text-align: justify;">
+                <p style="font-family: Comic Sans MS, cursive; font-size: 10pt;">SALAD BUAH</p>
+                <hr style="border-color: black; height: 0.1;">
+                <p class="pketmenu" style="margin-bottom: 1px;"><b>Rating :</b> ⭐⭐⭐⭐⭐</p>
+                <p class="pketmenu" style="margin-bottom: 1px;"></p><b></b>Harga :</b> Rp 16.000</p>
+                <p class="pketmenu"><b>Deskripsi :</b> Salad buah merupakan makanan segar yang terbuat dari berbagai macam buah.</p>
+                                
+            </div>
+        </div>
+        <img src="image/salad buah.jpeg" style="height: 170px">
+        <p style="text-align: center; font-family: Comic Sans MS, cursive;">SALAD BUAH</p>
+
+    
+
+
+    </div>
+  </div>
+
+</div>
+
+ 
+<div class="responsive">
+  <div class="menu">
+    <a target="_blank" href="salad buah.jpeg">
+      <img src="image/salad buah.jpeg" alt="salad buah" width="300">
+    </a>
+    <h6>SALAD BUAH</h6>
+    <h6>Rating : ⭐⭐⭐⭐⭐</h6>
+    <H6>Harga : 16.000</H6>
+    <H6>Deskripsi :</H6>
+    <H6>Salad buah merupakan makanan segar yang terbuat dari berbagai macam buah</h6>
+  </div>
+</div>
+
+
 
 
   <div class="responsive">
@@ -184,18 +276,7 @@
     </div>
   </div>
 
-  <div class="responsive">
-    <div class="menu">
-      <a target="_blank" href="salad buah.jpeg">
-        <img src="image/salad buah.jpeg" alt="salad buah" width="300">
-      </a>
-      <h6>SALAD BUAH</h6>
-      <h6>Rating : ⭐⭐⭐⭐⭐</h6>
-      <H6>Harga : 16.000</H6>
-      <H6>Deskripsi :</H6>
-      <H6>Salad buah merupakan makanan segar yang terbuat dari berbagai macam buah</h6>
-    </div>
-  </div>
+  
 
   <div class="responsive">
     <div class="menu">
@@ -225,18 +306,7 @@
     </div>
   </div>
 
-  <div class="responsive">
-    <div class="menu">
-      <a target="_blank" href="milkshake.jpeg">
-        <img src="image/milkshake.jpeg" alt="milkshake" width="300">
-      </a>
-      <h6>MILKSHAKE</h6>
-      <h6>Rating : ⭐⭐⭐⭐⭐</h6>
-      <H6>Harga : 8.000</H6>
-      <H6>Deskripsi :</H6>
-      <H6>minuman dingin dari campuran susu,cheese,dan jelly</h6>
   
-    </div>
   </div>
 
   
