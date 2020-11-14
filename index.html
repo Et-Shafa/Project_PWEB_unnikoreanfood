@@ -34,54 +34,53 @@
     </style>
 </head>
 <body> 
-    <div id="d1"> <!--div Dashboard 1-->
-        <div style="width: 98%; margin: 0 auto;">   <!--atas-->
-            <div id="tenjoy"> <!--div left-->
+    <div class="d1 col-12 col-s-12"> <!--div Dashboard 1-->
+        <div  style="margin: 0 auto; padding: 2%;">   <!--atas-->
+            <div class="tenjoy col-4 col-s-4"> <!--div left-->
                 <p>Enjoy the</p>
                 <p>Taste!!!</p>
             </div>
-            <div style="float: right; width: 52%; margin-top: 10px;"> <!--div right-->
-                <div> <!--div atas-->
-                    <div style="float: left; text-align: center; width: max-content; padding-top: 15px;">
-                        <div style="margin-top: 20px;height: min-content;width: fit-content; margin: 0 auto;"> <!--search-->
-                            <input class="button" type="button">
-                            <input class="search" type="text">		
-                            <div style="clear: both;"></div>	
-                        </div>
-                        <ul>
-                            <li class="navbaraktif"><a href="index.html">Beranda</a>|</li>
-                            <li><a href="daftarmenu.html">Daftar Menu</a>|</li>
-                            <li class="navbaraktif"><a href="#eventback">Event</a>|</li>
-                            <li class="dropdown">
-                                <a href="javascript:void(0)">Contact Us</a>
-                                <div class="dropdown-content">
-                                    <a href="https://api.whatsapp.com/send?phone=6282234078626&text=Hai" target="_blank" style="font-size: 15px;"> <img src="image/whatsapp (1).png" style="width: 20px;" alt=""> Whatsapp</a>
-                                    <a href="https://id-id.facebook.com/pages/category/Shopping---Retail/Unni-Korean-Food-Bondowoso-167677286755311/" target="_blank" style="font-size: 15px;"> <img src="image/facebook (1).png" style="width: 20px;" alt=""> Facebook</a>
-                                    <a href="https://food.grab.com/id/id/restaurant/unni-korean-food-bondowoso-delivery/6-CY4UCT5VC2UDN2" target="_blank" style="font-size: 15px;"> <img src="image/grab.png" style="width: 40px;" alt=""> Grab</a>                
-                                    <a href="https://www.instagram.com/unnikoreanfood/?hl=id" target="_blank" style="font-size: 15px;"> <img src="image/instagram (1).png" style="width: 20px;" alt=""> Instagram</a>
-                                </div>
-                            </li>
-                        </ul>
+            <div class="col-7 col-s-7" style="float: right; "> <!--div right-->
+                <div class="col-7 col-s-7" style="float: left; margin-left: 40px; text-align: center; padding-top: 15px;">
+                    <div style="margin-top: 20px;height: min-content;width: fit-content; margin: 0 auto;"> <!--search-->
+                        <input class="button" type="button">
+                        <input class="search" type="text">		
+                        <div style="clear: both;"></div>	
                     </div>
-                    <img src="image/logo.jpeg" style="width:200px; margin: 10px; float: right;" >
-                    <div style="clear: both;"></div>
+                    <ul> <!--navbar-->
+                        <li class="navbaraktif"><a href="index.html">Beranda</a>|</li>
+                        <li><a href="daftarmenu.html">Daftar Menu</a>|</li>
+                        <li class="navbaraktif"><a href="#eventback">Event</a>|</li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)">Contact Us</a>
+                            <div class="dropdown-content">
+                                <a href="https://api.whatsapp.com/send?phone=6282234078626&text=Hai" target="_blank" style="font-size: 15px;"> <img src="image/whatsapp (1).png" style="width: 20px;" alt=""> Whatsapp</a>
+                                <a href="https://id-id.facebook.com/pages/category/Shopping---Retail/Unni-Korean-Food-Bondowoso-167677286755311/" target="_blank" style="font-size: 15px;"> <img src="image/facebook (1).png" style="width: 20px;" alt=""> Facebook</a>
+                                <a href="https://food.grab.com/id/id/restaurant/unni-korean-food-bondowoso-delivery/6-CY4UCT5VC2UDN2" target="_blank" style="font-size: 15px;"> <img src="image/grab.png" style="width: 40px;" alt=""> Grab</a>                
+                                <a href="https://www.instagram.com/unnikoreanfood/?hl=id" target="_blank" style="font-size: 15px;"> <img src="image/instagram (1).png" style="width: 20px;" alt=""> Instagram</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
+                <img class="col-4 col-s-4" src="image/logo.jpeg" style="float: right;" >
+                <div style="clear: both;"></div>
+
             </div>
             <div style="clear: both;"></div>
         </div>
         <div style="margin: 20px 60px;"> <!--bawah-->
-            <div style="float: left; width: 50%;">
+            <div class="col-6 col-s-6" style="float: left;">
                 <div class="container_slideshow"> <!--container-->
                     <div class="mySlides fade"><!--gambar 1-->
-                        <img src="image/hotchiken.jpeg" alt="ini gambar 1" style="height: 400px;">
+                        <img src="image/hotchiken.jpeg" alt="ini gambar 1" class="slideheight">
             
                     </div>
                     <div class="mySlides fade"><!--gambar 2-->
-                        <img src="image/hotang.jpeg" alt="ini gambar 2" style="height: 400px;">
+                        <img src="image/hotang.jpeg" alt="ini gambar 2" class="slideheight">
             
                     </div>
                     <div class="mySlides fade"><!--gambar 3-->
-                        <img src="image/kimbap.jpeg" alt="ini gambar 3" style="height: 400px;">
+                        <img src="image/kimbap.jpeg" alt="ini gambar 3" class="slideheight">
             
                     </div>
                 </div>
@@ -94,39 +93,32 @@
                 <script src="jsslide.js"></script>
             </div>
             
-            <div id="talamat"> <!--div bawah-->
+            <div class="talamat col-6 col-s-6"> <!--div bawah-->
                 <p style="font-size: 40pt;">UNNI KOREAN FOOD</p>
                 <p style="font-size: 30pt;">Rumah Makan Korea</p>
                 <p>Gang Melati 2 Jl. Khairil Anwar</p>
                 <p>Badean, Kec.Bondowoso</p>
                 <p>Bondowoso - Jawa Timur</p>
                 <br>
-                <button style="width: 200px;
-                    height: 35px;
-                    border-radius: 15px;
-                    font-size: 12pt;
-                    border: 0;
-                    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.479);
-                    font-weight: bold;
-                    background-color: rgb(223, 217, 198);">
-                    <a>Menu lengkap kami</a>
+                <button class="btnmenu">
+                    <a href="daftarmenu.html">Menu lengkap kami</a>
                 </button>
             </div>
             <div style="clear: both;"></div>
         </div>
     </div>
     <!-- Dashboard 2 -->
-    <div class="sub_title" style="height: 800px; background-size: 100vw; padding: 2%; background-color: #FFBC95;">
-        <div style="height: 450px;">
+    <div class="sub_title col-12 col-s-12" style="height: 800px; background-size: 100vw; padding: 2%; background-color: #FFBC95;">
+        <!-- <div style="height: 450px;">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63227.18264649984!2d113.8281471!3d-7.9264826!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x833ecebadeeb023!2sUnni%20Korean%20Food!5e0!3m2!1sid!2sid!4v1604808451630!5m2!1sid!2sid"
-            width="55%"
+            class="col-6 col-s-6"
             height="100%"
             frameborder="0" 
             style="border:0; float: left;" 
             allowfullscreen="" 
             aria-hidden="false" 
             tabindex="0"></iframe>
-            <div style="height: 100%; width: 43%; float: right; background-color: #FFE7D9;">
+            <div class="col-5 col-s-5" style="height: 100%; float: right; background-color: #FFE7D9;">
                 <p>Tentang Kami</p>
             </div>
         </div>
@@ -137,7 +129,7 @@
             <img src="image/hotchiken.jpeg" class="food" alt="">
             <img src="image/salad.jpg" class="food" alt="">
 
-        </div>
+        </div> -->
     </div>
     
 <!-- dashboard 3 -->
