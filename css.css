@@ -59,7 +59,7 @@ html{
     margin-top:5px;
     width:97%;
     height:60px;
-    overflow-y: auto;
+    overflow-x: auto;
     white-space: nowrap;
     background-color: whitesmoke;
     
@@ -70,14 +70,23 @@ html{
     height: 120px; 
     background-color: #FFBC95; 
     background-size: 20%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15pt;
+    padding: 2pxpx;
 
 }
 .eventKet{
     width: auto; 
-    height: 120px; 
+    height: 100px; 
     background-color:#FFE7D9; 
     border-bottom-right-radius: 10px; 
     border-top-right-radius: 10px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    padding-top: auto;
 
 }
 
