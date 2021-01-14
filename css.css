@@ -3,11 +3,17 @@
 html{
     scroll-behavior: smooth;
 }
+header{
+    /* background-color: #e1dbc6;  */
+    padding: 10px;
+    display: flex;
+}
 .d1{
     position: relative;
     height: 700px;
     background-size: 100% 100%;
-    background-image: url(image/mainbg.png);
+    /* background-color: #e1dbc6; */
+    background-image: url(image/Event.jpg);
     background-repeat: no-repeat;
     margin: 0px;
     padding: 0px;
@@ -163,28 +169,30 @@ label{
 
 
 
-/* /////////// */
+
 
 .search {
+    display: none;
+    float: left;
     padding:8px 15px;
     background:rgb(255, 255, 255);
     border:0px;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    
 }
 .button {
-    float: left;
     padding:8px 15px;
     right:-0px;
     background-image: url(image/search.png);
     background-size: cover;
     border:0px ;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
 }
 ul{
     width: max-content;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     list-style-type: none;
     padding: 0;
     border-bottom: solid black;
@@ -293,6 +301,24 @@ li:hover{
     to {opacity: 1;}
 }
 
+.sidebar{
+    margin-left: auto;
+}
+.line{
+    width: 20px;
+    height: 6px;
+    border-radius: 2px;
+    background-color: black;
+    margin-bottom: 2px;
+}
+
+/* .logo{
+    
+} */
+.nav_item{
+    margin-left: auto;
+    top: auto;
+}
 
 
 
@@ -312,6 +338,10 @@ li:hover{
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 
+    .sidebar{
+        display: none;
+    }
+    
     .tenjoy{
         text-align: center;
         font-size: 50pt;
@@ -351,8 +381,14 @@ li:hover{
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
 
+    .nav_item{
+        display: none;
+    }
+    .cari{
+        display: none;
+    }
     .d1{
-        background-image: url(image/mainbgrelative.png);
+        background-image: url(image/Event2.jpg);
         background-size: 100vw 100%;
     }
     .tenjoy{
