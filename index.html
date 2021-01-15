@@ -9,33 +9,11 @@
     <style>
         @import url(css.css);
         @import url(cssslide.css);
-
-        #btnTop {
-            position: fixed;
-            float: right;
-            width: 40px;
-            height: 40px;
-            bottom: 1%;
-            right: 1%;
-            background-color: rgba(255, 248, 220, 0.603);
-            border-radius: 10px;
-            box-shadow: 1px 3px 6px gray;
-            font-size: 20px;
-            background: url(image/up.png) no-repeat center;
-            background-size: 20px;
-            opacity: 70;
-
-
-        }
-
-        #btnTop:hover {
-            background-color: white;
-        }
     </style>
 </head>
 
 <body>
-    <div style="width:200px;right:0;position: fixed;" id="mySidebar">
+    <div style="width:200px; height: 100%; right:0; position: fixed; box-shadow: 1px 1px 1px 1px black;" id="mySidebar">
         <button onclick="sidebar_close()">Close X</button>
         <a href="#" class="w3-bar-item w3-button">Link 1</a>
         <a href="#" class="w3-bar-item w3-button">Link 2</a>
@@ -92,13 +70,7 @@
 
 
 
-
-
-
-
-
-
-        <div style="margin: 20px 60px;">
+        <div style="margin: 3% 60px;">
             <!--bawah-->
             <div class="col-6 col-s-6" style="float: left;">
                 <div class="container_slideshow">
