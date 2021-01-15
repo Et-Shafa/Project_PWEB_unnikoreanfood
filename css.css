@@ -425,6 +425,9 @@ li:hover{
     #mySidebar{
         display: none;
     }
+    #slide2{
+        display: none;
+    }
     
 
 
@@ -486,6 +489,9 @@ li:hover{
         justify-content: center;
         justify-items: center;
         margin: 5px;
+    }
+    #slide1{
+        display: none;
     }
     
     
