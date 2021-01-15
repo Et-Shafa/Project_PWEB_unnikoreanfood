@@ -32,19 +32,19 @@ function inputan(){
         // jika ada salah satu saja data kosong, maka keluar popup harus melengkapi data
         alert("Mohon Lengkapi Data")
     }else{
-        var tabel = document.getElementById("tabelInputan");
-        var row = tabel.insertRow(1);
-        var cell1 = row.insertCell(0);
-        var cell2 = row.insertCell(1);
-        var cell3 = row.insertCell(2);
-        var cell4 = row.insertCell(3);
-        var cell5 = row.insertCell(4);
+        // var tabel = document.getElementById("tabelInputan");
+        // var row = tabel.insertRow(1);
+        // var cell1 = row.insertCell(0);
+        // var cell2 = row.insertCell(1);
+        // var cell3 = row.insertCell(2);
+        // var cell4 = row.insertCell(3);
+        // var cell5 = row.insertCell(4);
 
-        cell1.innerHTML = tanggal;
-        cell2.innerHTML = satu;
-        cell3.innerHTML = dua;
-        cell4.innerHTML = tiga;
-        cell5.innerHTML = empat;
+        // cell1.innerHTML = tanggal;
+        // cell2.innerHTML = satu;
+        // cell3.innerHTML = dua;
+        // cell4.innerHTML = tiga;
+        // cell5.innerHTML = empat;
         alert("Feedback terkirim, terimakasih. Kami akan berusaha lebih baik lagi")
 
     }

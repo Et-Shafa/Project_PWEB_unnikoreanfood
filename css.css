@@ -14,13 +14,13 @@ header{
 }
 .d1{
     position: relative;
-    height: 700px;
+    height: min-content;
     background-size: 100% 100%;
     /* background-color: #e1dbc6; */
     background-image: url(image/Event.jpg);
     background-repeat: no-repeat;
     margin: 0px;
-    padding: 0px;
+    padding-bottom: 30px;
 }
 
 .talamat{
@@ -31,10 +31,11 @@ header{
     margin-top: 5%;
 }
 .btnmenu{
-    width: 200px;
-    height: 35px;
-    border-radius: 15px;
-    font-size: 12pt;
+    width: max-content;
+    height: min-content;
+    padding: 10px;
+    border-radius: 30%;
+    font-size: 60%;
     border: 0;
     box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.479);
     font-weight: bold;
@@ -75,7 +76,8 @@ header{
 }
 
 .scrollmenu{
-    display:inline-block;
+    display:flex;
+    /* justify-content: space-around; */
     padding:5px;
     margin-top:5px;
     width:97%;
@@ -128,10 +130,13 @@ header{
 
 
 .food{
-    height: 268px;
-    margin-right: 15px;
+    height: 100%;
+    margin-right: 2%;
     box-shadow: 2px 3px 4px grey;
 
+}
+.feedback{
+    height: 500px;
 }
 
 
@@ -163,10 +168,11 @@ header{
     color: black;
     font-size: 16pt;
     font-family: Verdana, sans-serif;
-    height: 40px;
+    height: max-content;
     margin-top: 30px;
     align-items: center;
     width: 30%;
+    padding: 2%;
     margin-left: 30%;
 }
 .garis_Footer{
@@ -440,6 +446,9 @@ li:hover{
     .home{
         grid-template-columns: 1fr;
         grid-template-rows: 2fr;
+    }
+    .feedback{
+        height: 300px;
     }
     
     

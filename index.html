@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <div style="background-color: blue; z-index: 10; width:20%; height: 100%; padding: 5px; right:0; position: fixed; display: none; box-shadow: 1px 1px 1px 1px black;"
+    <div style="background-color: #dbb9a6; z-index: 10; width:20%; height: 100%; padding: 5px; right:0; position: fixed; display: none; box-shadow: 1px 1px 1px 1px black;"
         id="mySidebar">
-        <button onclick="sidebar_close()">Close X</button>
+        <button onclick="sidebar_close()" style="background-color: burlywood;">Close X</button>
         <li class="navbaraktif"><a href="index.html">Beranda</a>|</li>
         <li><a href="daftarmenu.html">Daftar Menu</a>|</li>
         <li><a href="event.html">Event</a>|</li>
@@ -96,8 +96,8 @@
                     <p class="tenjoy">Enjoy the Taste!!!</p>
                     <div class="talamat">
                         <!--div bawah-->
-                        <p style="font-size: 40pt;">UNNI KOREAN FOOD</p>
-                        <p style="font-size: 30pt;">Rumah Makan Korea</p>
+                        <p style="font-size: 200%;">UNNI KOREAN FOOD</p>
+                        <p style="font-size: 150%;">Rumah Makan Korea</p>
                         <p>Gang Melati 2 Jl. Khairil Anwar</p>
                         <p>Badean, Kec.Bondowoso</p>
                         <p>Bondowoso - Jawa Timur</p>
@@ -134,27 +134,39 @@
 
 
         <!-- Dashboard 2 -->
-        <div class="col-12 col-s-12" style="height: 850px; position: relative; background-color: #FFBC95;">
-            <div style="padding: 2%;">
-                <div style="height: 450px;">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63227.18264649984!2d113.8281471!3d-7.9264826!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x833ecebadeeb023!2sUnni%20Korean%20Food!5e0!3m2!1sid!2sid!4v1604808451630!5m2!1sid!2sid"
-                        class="col-7 col-s-7" height="100%" style="border:0; float: left;" aria-hidden="false"></iframe>
-                    <div
-                        style="width: 40%; height: 100%; float: right; box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.575); background-color: #FFE7D9;">
-                        <p>Tentang Kami</p>
-                    </div>
-                </div>
-                <div class="scrollmenu"
-                    style="height: 280px; background-color: whitesmoke; margin-top: 2%; padding: 20px;">
-                    <img src="image/odeng.jpeg" class="food" alt="">
-                    <img src="image/toboki.jpeg" class="food" alt="">
-                    <img src="image/bimbimbap.jpeg" class="food" alt="">
-                    <img src="image/hotchiken.jpeg" class="food" alt="">
-                    <img src="image/salad.jpg" class="food" alt="">
+        <div class="99% col-s-12"
+            style="height: max-content; background-color: #FFBC95; display: grid; grid-template-rows: 2; padding: 2%;">
 
+            <div style="height: 100%; display: grid; grid-template-columns: 50% 50%; margin-bottom: 1%;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63227.18264649984!2d113.8281471!3d-7.9264826!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x833ecebadeeb023!2sUnni%20Korean%20Food!5e0!3m2!1sid!2sid!4v1604808451630!5m2!1sid!2sid"
+                    width="99%" height="100%" style="margin: 1%; border:0;" aria-hidden="false"></iframe>
+                <div
+                    style="width: 97%; height: 100%; margin: 1%; padding: 2%; box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.575); background-color: #FFE7D9; font-size: 120%;">
+                    <pre>Menerima :
+    . Makan di tempat
+    · Bawa pulang
+    · Pesan antar
+Jam buka : 
+    Senin	07.00–21.00
+    Selasa	07.00–21.00
+    Rabu	07.00–21.00
+    Kamis	07.00–21.00
+    Jumat	07.00–21.00
+    Sabtu	07.00–21.00
+    Minggu	07.00–21.00
+                            </pre>
                 </div>
             </div>
+            <div class="scrollmenu" style="height: 280px; background-color: whitesmoke; margin-top: 2%; padding: 2%;">
+                <img src="image/odeng.jpeg" class="food" alt="">
+                <img src="image/toboki.jpeg" class="food" alt="">
+                <img src="image/bimbimbap.jpeg" class="food" alt="">
+                <img src="image/hotchiken.jpeg" class="food" alt="">
+                <img src="image/salad.jpg" class="food" alt="">
+
+            </div>
+
         </div>
 
 
@@ -175,61 +187,29 @@
             <p class="sub_Title" style="color: #ffffff;">Event</p>
             <div class="garis_Bawah"></div>
 
-            <div class="col-11 col-s-11 eventbox" style="margin-bottom: 10px;">
-                <div class="eventfoto col-5 col-s-5"><img src="image/info.jpg" style="height: 300px;"></div>
-                <div class="eventKet col-7 col-s-7" style="height: 300px;">
-                    <div style="padding: 25px;">
-                        <p>Sampai tanggal 25 November</p>
-                        <p>We're Hiring cook</p>
-                        <p>info lebih lengkap :<span><a
-                                    href="https://www.instagram.com/p/CHeKn23Jzto/?utm_source=ig_web_copy_link">Klik
-                                    disini!</a></span> </p>
+            <div style="display: grid; grid-template-columns: 30% 30% 30%; grid-template-rows: 3fr;">
+                <div class="col-10 col-s-11 eventbox" style="margin-bottom: 10px;">
+                    <div class="eventfoto col-5 col-s-5"><img src="image/info.jpg" style="height: 300px;"></div>
 
-                    </div>
                 </div>
-                <div style="clear: both;"></div>
-            </div>
-            <div class="col-11 col-s-11 eventbox" style="margin-bottom: 10px;">
-                <div class="eventfoto col-5 col-s-5"><img src="image/promo4.jpg" style="height: 300px;"></div>
-                <div class="eventKet col-7 col-s-7" style="height: 300px;">
-                    <div style="padding: 25px;">
-                        <p>Hanya hari ini!!! Big Deal 11.11</p>
-                        <p>11 November</p>
-                    </div>
-                </div>
-                <div style="clear: both;"></div>
-            </div>
-            <div class="col-11 col-s-11 eventbox" style="margin-bottom: 10px;">
-                <div class="eventfoto col-5 col-s-5"><img src="image/promo5.jpg" style="height: 300px;"></div>
-                <div class="eventKet col-7 col-s-7" style="height: 300px;">
-                    <div style="padding: 25px; ">
-                        <p>Big Promo!!! Buy 4 Get 2 Free</p>
-                        <p>10 November</p>
-                    </div>
-                </div>
-                <div style="clear: both;"></div>
-            </div>
-            <div class="eventbox col-11 col-s-11" style="margin-bottom: 10px;">
-                <div class="eventfoto col-5 col-s-5"><img src="image/promo3.jpg" style="height: 300px;"></div>
-                <div class="eventKet col-7 col-s-7" style="height: 300px;">
-                    <div style="padding: 25px;">
-                        <p>Buy 2 Get 1 Free</p>
-                    </div>
-                </div>
-                <div style="clear: both;"></div>
-            </div>
-            <div class="eventbox col-11 col-s-11" style="margin-bottom: 10px;">
-                <div class="eventfoto col-5 col-s-5"><img src="image/promo2.jpg" style="height: 300px;"></div>
-                <div class="eventKet col-7 col-s-7" style="height: 300px;">
-                    <div style="padding: 25px;">
-                        <p>Corndog, Buy 2 Get 1 Free!!!</p>
-                        <p>10 November 2020</p>
-                        <p>Jam 12.00-15.00</p>
-                    </div>
-                </div>
-                <div style="clear: both;"></div>
-            </div>
 
+                <div class="col-10 col-s-11 eventbox" style="margin-bottom: 10px;">
+                    <div class="eventfoto col-5 col-s-5"><img src="image/promo5.jpg" style="height: 300px;"></div>
+
+                </div>
+                <div class="eventbox col-10 col-s-11" style="margin-bottom: 10px;">
+                    <div class="eventfoto col-5 col-s-5"><img src="image/promo3.jpg" style="height: 300px;"></div>
+
+                </div>
+                <div class="eventbox col-10 col-s-11" style="margin-bottom: 10px;">
+                    <div class="eventfoto col-5 col-s-5"><img src="image/promo2.jpg" style="height: 300px;"></div>
+
+                </div>
+                <div class="col-10 col-s-11 eventbox" style="margin-bottom: 10px;">
+                    <div class="eventfoto col-5 col-s-5"><img src="image/promo4.jpg" style="height: 300px;"></div>
+
+                </div>
+            </div>
 
         </div>
 
@@ -254,7 +234,7 @@
 
 
         <!-- dashboard 4 -->
-        <div style="height: 500px;">
+        <div class="feedback">
             <!--Dashboard 4-->
             <p class="sub_Title">Form Pesan</p>
             <div class="garis_Bawah"></div>
@@ -273,7 +253,7 @@
                     <br>
                     <input type="text" id="subyekPesan" class="input_style">
                     <br>
-                    <input type="button" value="Kirim" id="kirim">
+                    <input type="button" value="Kirim" onclick="inputan()" id="kirim">
                 </div>
 
                 <div style="width: 50%; height: 100%;float: right;">
