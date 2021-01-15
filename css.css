@@ -464,6 +464,9 @@ li:hover{
     #btnTop{
         display: none;
     }
+    .container_slideshow{
+        margin-top: 30px;
+    }
     
     
         
