@@ -145,7 +145,7 @@ header{
     background: #FFBC95;
     height: 3px;
     margin: 0 auto;
-    width: 400px;
+    width: 70%;
     margin-bottom: 20px;
 }
 .input_style{
@@ -169,7 +169,7 @@ header{
     font-size: 16pt;
     font-family: Verdana, sans-serif;
     height: max-content;
-    margin-top: 30px;
+    margin-top: 2%;
     align-items: center;
     width: 30%;
     padding: 2%;
@@ -184,7 +184,7 @@ header{
 .sub_Title{
     text-align: center; 
     margin: 0 auto;
-    font-size: 40pt;
+    font-size: 200%;
     font-weight: bold;
     padding-top: 15px;
 
