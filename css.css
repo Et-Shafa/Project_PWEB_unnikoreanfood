@@ -97,8 +97,7 @@ header{
 
 .eventfoto{  
     height: min-content; 
-    background-color: #FFBC95; 
-    background-size: 20%;
+    background-color: #ffebe0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     text-align: center;
@@ -131,7 +130,6 @@ header{
     height: 93%;
     margin: 1%;
     box-shadow: 2px 3px 4px grey;
-
 }
 .feedback{
     height: 500px;
@@ -386,10 +384,18 @@ li:hover{
 .menumain{
     display: grid; 
     grid-template-columns: 30% 30%; 
-    grid-template-rows: 2fr;
-    justify-content: space-around;
+    /* grid-template-rows: 2fr; */
+    justify-content: center;
+    justify-items: center;
     margin: 5px;
 }
+.sosmed{
+    display: grid; 
+    grid-template-columns:10% 10% 10% 10%; 
+    justify-content: center;
+    justify-items: center;
+}
+
 
 /* Untuk desktop: */
 @media only screen and (min-width: 450px) {
@@ -410,9 +416,6 @@ li:hover{
     .sidebar{
         display: none;
     }
-    
-    
-
     .slideheight{
         height: 360px;
     }
@@ -422,14 +425,7 @@ li:hover{
     #mySidebar{
         display: none;
     }
-    .sosmed{
-        display: grid; 
-        grid-template-columns:30% 10% 10% 0% 10% 10% 30%; 
-        margin-left: auto;
-        margin-right: auto;
-    }
     
-  }
 
 
 
@@ -480,15 +476,15 @@ li:hover{
         margin-top: 30px;
     }
     .sosmed{
-        display: grid; 
-        grid-template-columns: 0% 35% 35% 0%;
-        grid-template-rows: 3fr; 
+        grid-template-columns: 30% 30%;
         margin-bottom: 10px;
+        justify-content: center;
+        justify-items: center;
     }
     .menumain{
-        grid-template-columns: 30%; 
-        grid-template-rows: 2fr;
-        justify-content: space-around;
+        grid-template-columns: 100%; 
+        justify-content: center;
+        justify-items: center;
         margin: 5px;
     }
     
