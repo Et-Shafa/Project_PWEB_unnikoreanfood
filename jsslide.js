@@ -20,7 +20,7 @@ function showSlides(){
 
 
 function inputan(){
-    var tanggal = new Date();
+    // var tanggal = new Date();
     var satu= document.getElementById("nama").value;
     var dua= document.getElementById("email").value;
     var tiga= document.getElementById("subyekPesan").value;
@@ -54,8 +54,10 @@ function inputan(){
 
 function sidebar_open() {
     document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("mainblur").style.display = "block";
 }
   
 function sidebar_close() {
-document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("mainblur").style.display = "none";
 }
