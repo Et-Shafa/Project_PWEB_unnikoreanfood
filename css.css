@@ -104,6 +104,8 @@ header{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     text-align: center;
+    border-radius: 20%;
+    margin: 10px;
 
 
 }
@@ -381,10 +383,11 @@ li:hover{
     background-color: rgba(0, 0, 0, 0.39);
 }
 
-.memumain{
+.menumain{
     display: grid; 
-    grid-template-columns: 30% 30% 30% 30%; 
+    grid-template-columns: 30% 30%; 
     grid-template-rows: 2fr;
+    justify-content: space-around;
     margin: 5px;
 }
 
@@ -481,6 +484,12 @@ li:hover{
         grid-template-columns: 0% 35% 35% 0%;
         grid-template-rows: 3fr; 
         margin-bottom: 10px;
+    }
+    .menumain{
+        grid-template-columns: 30%; 
+        grid-template-rows: 2fr;
+        justify-content: space-around;
+        margin: 5px;
     }
     
     

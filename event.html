@@ -10,77 +10,97 @@
     @import url(css.css);
     @import url(cssslide.css);
     @import url(menu.css);
-
-    #btnTop {
-        position: fixed;
-        float: right;
-        width: 40px;
-        height: 40px;
-        bottom: 1%;
-        right: 1%;
-        background-color: rgba(255, 248, 220, 0.603);
-        border-radius: 10px;
-        box-shadow: 1px 3px 6px gray;
-        font-size: 20px;
-        background: url(image/up.png) no-repeat center;
-        background-size: 20px;
-        opacity: 70;
-
-
-    }
-
-    #btnTop:hover {
-        background-color: white;
-    }
 </style>
 
 <body style="background-color: rgb(223, 218, 193); height: 1400px;">
+    <div style="background-color: #fff4ee; z-index: 10; width:35%; height: 100%; padding: 5px; right:0; position: fixed; display: none;  box-shadow: 0px 0px 4px 4px rgb(110, 110, 110);"
+        id="mySidebar">
+        <button onclick="sidebar_close()"
+            style="width: 100%; height: 30px; background-color: burlywood; font-weight: bold;">Close
+            X</button>
+        <br>
+        <br>
+        <img src="image/logo.jpeg" alt="logo" class="col-s-12">
+        <br>
+        <br>
+        <ul style="display: grid;">
+            <li><a href="index.html">O Beranda</a></li>
+            <li><a href="daftarmenu.html">O Daftar Menu</a></li>
+            <li class="navbaraktif"><a href="event.html">O Event</a></li>
+            <li class="dropdown">
+                <a>O Contact Us</a>
+                <div class="dropdown-content">
+                    <a href="https://api.whatsapp.com/send?phone=6282234078626&text=Hai" target="_blank"
+                        style="font-size: 15px;">
+                        <img src="image/whatsapp (1).png" style="width: 20px;" alt="">
+                        Whatsapp</a>
+                    <a href="https://id-id.facebook.com/pages/category/Shopping---Retail/Unni-Korean-Food-Bondowoso-167677286755311/"
+                        target="_blank" style="font-size: 15px;"> <img src="image/facebook (1).png" style="width: 20px;"
+                            alt="">
+                        Facebook</a>
+                    <a href="https://food.grab.com/id/id/restaurant/unni-korean-food-bondowoso-delivery/6-CY4UCT5VC2UDN2"
+                        target="_blank" style="font-size: 15px;"> <img src="image/grab.png" style="width: 40px;" alt="">
+                        Grab</a>
+                    <a href="https://www.instagram.com/unnikoreanfood/?hl=id" target="_blank" style="font-size: 15px;">
+                        <img src="image/instagram (1).png" style="width: 20px;" alt="">
+                        Instagram</a>
+                </div>
+            </li>
+            <div class="cari">
+                <!--search-->
+                <input class="search" type="text">
+                <input class="button" type="button">
+                <!-- <img class="button" src="image/search.png" alt=""> -->
+                <div style="clear: both;"></div>
+            </div>
+        </ul>
+    </div>
+    <div class="blur" id="mainblur">
+
+    </div>
     <div class="d1 col-12 col-s-12" id="d1">
         <!--div Dashboard 1-->
-        <div style="margin: 0 auto; padding: 2%;">
-            <!--atas-->
-            <div class="col-7 col-s-7" style="float: right; ">
-                <!--div right-->
-                <div class="col-7 col-s-7"
-                    style="float: left; margin-left: 40px; text-align: center; padding-top: 15px;">
-                    <div style="margin-top: 20px;height: min-content;width: fit-content; margin: 0 auto;">
-                        <!--search-->
-                        <input class="button" type="button">
-                        <input class="search" type="text">
-                        <div style="clear: both;"></div>
+        <header>
+            <img class="col-1 col-s-3 logo" src="image/logo.jpeg" style=" box-shadow: 3px 2px 2px rgb(80, 80, 80);">
+
+            <ul class="nav_item">
+                <!--navbar-->
+                <li><a href="index.html">Beranda</a>|</li>
+                <li><a href="daftarmenu.html">Daftar Menu</a>|</li>
+                <li class="navbaraktif"><a href="event.html">Event</a>|</li>
+                <li class="dropdown">
+                    <a>Contact Us</a>
+                    <div class="dropdown-content">
+                        <a href="https://api.whatsapp.com/send?phone=6282234078626&text=Hai" target="_blank"
+                            style="font-size: 15px;"> <img src="image/whatsapp (1).png" style="width: 20px;" alt="">
+                            Whatsapp</a>
+                        <a href="https://id-id.facebook.com/pages/category/Shopping---Retail/Unni-Korean-Food-Bondowoso-167677286755311/"
+                            target="_blank" style="font-size: 15px;"> <img src="image/facebook (1).png"
+                                style="width: 20px;" alt="">
+                            Facebook</a>
+                        <a href="https://food.grab.com/id/id/restaurant/unni-korean-food-bondowoso-delivery/6-CY4UCT5VC2UDN2"
+                            target="_blank" style="font-size: 15px;"> <img src="image/grab.png" style="width: 40px;"
+                                alt=""> Grab</a>
+                        <a href="https://www.instagram.com/unnikoreanfood/?hl=id" target="_blank"
+                            style="font-size: 15px;"> <img src="image/instagram (1).png" style="width: 20px;" alt="">
+                            Instagram</a>
                     </div>
-                    <ul>
-                        <!--navbar-->
-                        <li><a href="index.html">Beranda</a>|</li>
-                        <li class="navbaraktif"><a href="daftarmenu.html">Daftar menu</a>|</li>
-                        <li class="navbaraktif"><a href="event.html">Event</a>|</li>
-                        <li class="dropdown">
-                            <a>Contact Us</a>
-                            <div class="dropdown-content">
-                                <a href="https://api.whatsapp.com/send?phone=6282234078626&text=Hai" target="_blank"
-                                    style="font-size: 15px;"> <img src="image/whatsapp (1).png" style="width: 20px;"
-                                        alt=""> Whatsapp</a>
-                                <a href="https://id-id.facebook.com/pages/category/Shopping---Retail/Unni-Korean-Food-Bondowoso-167677286755311/"
-                                    target="_blank" style="font-size: 15px;"> <img src="image/facebook (1).png"
-                                        style="width: 20px;" alt=""> Facebook</a>
-                                <a href="https://food.grab.com/id/id/restaurant/unni-korean-food-bondowoso-delivery/6-CY4UCT5VC2UDN2"
-                                    target="_blank" style="font-size: 15px;"> <img src="image/grab.png"
-                                        style="width: 40px;" alt="">
-                                    Grab</a>
-                                <a href="https://www.instagram.com/unnikoreanfood/?hl=id" target="_blank"
-                                    style="font-size: 15px;"> <img src="image/instagram (1).png" style="width: 20px;"
-                                        alt=""> Instagram</a>
-
-                            </div>
-                        </li>
-                    </ul>
+                </li>
+                <div class="cari">
+                    <!--search-->
+                    <input class="search" type="text">
+                    <input class="button" type="button">
+                    <!-- <img class="button" src="image/search.png" alt=""> -->
+                    <div style="clear: both;"></div>
                 </div>
-                <img class="col-4 col-s-4" src="image/logo.jpeg" style="float: right;">
-                <div style="clear: both;"></div>
 
+            </ul>
+            <div class="sidebar" onclick="sidebar_open()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
-            <div style="clear: both;"></div>
-        </div>
+        </header>
 
 
         <!--daftar event-->
