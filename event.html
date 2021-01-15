@@ -6,8 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event</title>
 </head>
+<style>
+    @import url(css.css);
+    @import url(cssslide.css);
+
+    #btnTop {
+        position: fixed;
+        float: right;
+        width: 40px;
+        height: 40px;
+        bottom: 1%;
+        right: 1%;
+        background-color: rgba(255, 248, 220, 0.603);
+        border-radius: 10px;
+        box-shadow: 1px 3px 6px gray;
+        font-size: 20px;
+        background: url(image/up.png) no-repeat center;
+        background-size: 20px;
+        opacity: 70;
+
+
+    }
+
+    #btnTop:hover {
+        background-color: white;
+    }
+</style>
 
 <body>
+    <div class="d1 col-12 col-s-12" id="d1">
+        <!--div Dashboard 1-->
+        <header>
+            <img class="col-2 col-s-4 logo" src="image/logo.jpeg"
+                style="margin-right: 20%; box-shadow: 3px, 2px, 2px black;">
+            <div class="cari" style="height: min-content;width: fit-content; margin-left: auto;">
+                <!--search-->
+                <input class="search" type="text">
+                <input class="button" type="button">
+                <div style="clear: both;"></div>
+            </div>
+            <ul class="nav_item">
+                <!--navbar-->
+                <li class="navbaraktif"><a href="index.html">Beranda</a>|</li>
+                <li><a href="daftarmenu.html">Daftar Menu</a>|</li>
+                <li class="navbaraktif"><a href="#eventback">Event</a>|</li>
+                <li class="dropdown">
+                    <a>Contact Us</a>
+                    <div class="dropdown-content">
+                        <a href="https://api.whatsapp.com/send?phone=6282234078626&text=Hai" target="_blank"
+                            style="font-size: 15px;"> <img src="image/whatsapp (1).png" style="width: 20px;" alt="">
+                            Whatsapp</a>
+                        <a href="https://id-id.facebook.com/pages/category/Shopping---Retail/Unni-Korean-Food-Bondowoso-167677286755311/"
+                            target="_blank" style="font-size: 15px;"> <img src="image/facebook (1).png"
+                                style="width: 20px;" alt=""> Facebook</a>
+                        <a href="https://food.grab.com/id/id/restaurant/unni-korean-food-bondowoso-delivery/6-CY4UCT5VC2UDN2"
+                            target="_blank" style="font-size: 15px;"> <img src="image/grab.png" style="width: 40px;"
+                                alt=""> Grab</a>
+                        <a href="https://www.instagram.com/unnikoreanfood/?hl=id" target="_blank"
+                            style="font-size: 15px;"> <img src="image/instagram (1).png" style="width: 20px;" alt="">
+                            Instagram</a>
+                    </div>
+                </li>
+            </ul>
+
+
+            <div class="sidebar">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+        </header>
+
+    </div>
 
 </body>
 
