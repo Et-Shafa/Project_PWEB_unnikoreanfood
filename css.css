@@ -350,6 +350,21 @@ li:hover{
     height: min-content;
     width: fit-content;
 }
+.home{
+    margin: 4%; 
+    margin-top: 8%; 
+    display: grid; 
+    grid-template-columns: 
+    48% 52%; 
+    justify-content: space-around;
+}
+.tenjoy{
+    text-align: center;
+    font-size: 50pt;
+    text-shadow: 5px 4px 3px grey;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS'; 
+}
 
 
 
@@ -373,13 +388,7 @@ li:hover{
         display: none;
     }
     
-    .tenjoy{
-        text-align: center;
-        font-size: 50pt;
-        text-shadow: 5px 4px 3px grey;
-        font-weight: bolder;
-        font-family: 'Trebuchet MS'; 
-    }
+    
 
     .slideheight{
         height: 360px;
@@ -427,6 +436,10 @@ li:hover{
     }
     .slideheight{
         height: 200px;
+    }
+    .home{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
     }
     
     
