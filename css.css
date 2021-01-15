@@ -152,7 +152,7 @@ header{
     border: 2px solid #D3C0AC;
     background-color: #fcfcfc;
     width: 95%;
-    height: 15%;
+    height: 13%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
@@ -193,6 +193,7 @@ label{
     font-size: 15pt;
     font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
+
 
 
 
@@ -416,6 +417,12 @@ li:hover{
     #mySidebar{
         display: none;
     }
+    .sosmed{
+        display: grid; 
+        grid-template-columns:30% 10% 10% 0% 10% 10% 30%; 
+        margin-left: auto;
+        margin-right: auto;
+    }
     
   }
 
@@ -459,13 +466,19 @@ li:hover{
         grid-template-rows: 2fr;
     }
     .feedback{
-        height: 300px;
+        height: 400px;
     }
     #btnTop{
         display: none;
     }
     .container_slideshow{
         margin-top: 30px;
+    }
+    .sosmed{
+        display: grid; 
+        grid-template-columns: 0% 35% 35% 0%;
+        grid-template-rows: 3fr; 
+        margin-bottom: 10px;
     }
     
     
