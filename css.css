@@ -1,6 +1,7 @@
 /* Dashboard 1 */
-*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0;} /*membuat padding dan margin 0*/
 html{
+    /*ketika link ke halaman yang sama perpindahannya jadi halus*/
     scroll-behavior: smooth;
 }
 header{
@@ -95,12 +96,8 @@ header{
     height: 80%;
     display: block ;
 }
-.eventbox{
-    height: min-content;
-    margin: 0 auto;
-}
-.eventfoto{
-    float: left;  
+
+.eventfoto{  
     height: min-content; 
     background-color: #FFBC95; 
     background-size: 20%;
@@ -381,10 +378,15 @@ li:hover{
     width: 100%; 
     height: 100%; 
     z-index: 9;
-    background-color: rgba(0, 0, 0, 0.288);
+    background-color: rgba(0, 0, 0, 0.39);
 }
 
-
+.memumain{
+    display: grid; 
+    grid-template-columns: 30% 30% 30% 30%; 
+    grid-template-rows: 2fr;
+    margin: 5px;
+}
 
 /* Untuk desktop: */
 @media only screen and (min-width: 450px) {
@@ -480,6 +482,7 @@ li:hover{
         grid-template-rows: 3fr; 
         margin-bottom: 10px;
     }
+    
     
     
         
