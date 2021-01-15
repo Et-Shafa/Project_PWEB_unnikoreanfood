@@ -35,22 +35,23 @@
 </head>
 
 <body>
+    <div style="width:200px;right:0;position: fixed;" id="mySidebar">
+        <button onclick="sidebar_close()">Close X</button>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
     <div class="d1 col-12 col-s-12" id="d1">
         <!--div Dashboard 1-->
         <header>
-            <img class="col-2 col-s-4 logo" src="image/logo.jpeg"
-                style="margin-right: 20%; box-shadow: 3px, 2px, 2px black;">
-            <div class="cari" style="height: min-content;width: fit-content; margin-left: auto;">
-                <!--search-->
-                <input class="search" type="text">
-                <input class="button" type="button">
-                <div style="clear: both;"></div>
-            </div>
+            <img class="col-1 col-s-4 logo" src="image/logo.jpeg" style=" box-shadow: 3px 2px 2px rgb(80, 80, 80);">
+
             <ul class="nav_item">
                 <!--navbar-->
                 <li class="navbaraktif"><a href="index.html">Beranda</a>|</li>
                 <li><a href="daftarmenu.html">Daftar Menu</a>|</li>
-                <li class="navbaraktif"><a href="event.html">Event</a>|</li>
+                <li><a href="event.html">Event</a>|</li>
                 <li class="dropdown">
                     <a>Contact Us</a>
                     <div class="dropdown-content">
@@ -68,16 +69,35 @@
                             Instagram</a>
                     </div>
                 </li>
+                <div class="cari">
+                    <!--search-->
+                    <input class="search" type="text">
+                    <input class="button" type="button">
+                    <!-- <img class="button" src="image/search.png" alt=""> -->
+                    <div style="clear: both;"></div>
+                </div>
+
             </ul>
-
-
-            <div class="sidebar">
+            <div class="sidebar" onclick="sidebar_open()">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
 
+
+
         </header>
+
+
+
+
+
+
+
+
+
+
+
         <div style="margin: 20px 60px;">
             <!--bawah-->
             <div class="col-6 col-s-6" style="float: left;">

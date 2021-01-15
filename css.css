@@ -7,6 +7,10 @@ header{
     /* background-color: #e1dbc6;  */
     padding: 10px;
     display: flex;
+    box-shadow: 0px 4px 4px rgb(107, 107, 107); 
+    justify-content: space-around;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .d1{
     position: relative;
@@ -98,7 +102,8 @@ header{
 
 
 .navbaraktif{
-    background-color: #E7C8B6;
+    background-color: #D7B6A3;
+    box-shadow: 0px 1px 2px rgb(92, 92, 92);
 }
 
 
@@ -182,10 +187,11 @@ label{
     
 }
 .button {
-    padding:8px 15px;
+    padding:10px 17px;
     right:-0px;
     background-image: url(image/search.png);
     background-size: cover;
+    background-color: rgba(0, 0, 0, 0);
     border:0px ;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
@@ -195,14 +201,15 @@ ul{
     /* margin-top: 10px; */
     list-style-type: none;
     padding: 0;
-    border-bottom: solid black;
     height: 32px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
     
 }
 li{
     float: left;
     height: 30px;
-    border-bottom: black;
     font-size: 14pt;
     display: inline;
 }
@@ -214,7 +221,7 @@ a{
     
 }
 li:hover{
-    background-color: #E7C8B6;
+    background-color: #dbb9a6;
 }
 /* style dropdown pada div (hidden div) */
 .dropdown-content {
@@ -316,8 +323,13 @@ li:hover{
     
 } */
 .nav_item{
+    /* margin-left: auto; */
+    bottom: auto;
     margin-left: auto;
-    top: auto;
+}
+.cari{
+    height: min-content;
+    width: fit-content;
 }
 
 
